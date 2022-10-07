@@ -23,6 +23,7 @@ module.exports = {
         items: [{ text: "Linux", link: "/om/linux/" }],
       },
       { text: "软件工具", link: "/tools/" },
+      { text: "时光机", link: "/archive/" },
       { text: "Gitee", link: "https://gitee.com/Double_Float/" },
       { text: "Github", link: "https://github.com/Double327/" },
     ],
