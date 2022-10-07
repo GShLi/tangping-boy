@@ -1,3 +1,5 @@
+const lgsSidebar = require("./sidebar");
+
 module.exports = {
   title: "躺平男孩",
   description: "Just for TangPing!",
@@ -16,10 +18,15 @@ module.exports = {
         ],
       },
       { text: "后端", link: "/process/" },
-      { text: "运维", link: "/om/" },
+      {
+        text: "运维",
+        items: [{ text: "Linux", link: "/om/linux/" }],
+      },
       { text: "软件工具", link: "/tools/" },
       { text: "Gitee", link: "https://gitee.com/Double_Float/" },
       { text: "Github", link: "https://github.com/Double327/" },
     ],
+    sidebar: lgsSidebar,
+    displayAllHeaders: true,
   },
 };
