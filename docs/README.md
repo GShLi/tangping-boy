@@ -7,7 +7,7 @@ features:
     details: 以躺平为中心
   - title: 知识驱动
     details: 享受
-  - title: 高性能
-    details: XXX
-footer: MIT Licensed | Copyright © 2022-present Evan You
+footer: MIT Licensed | Copyright © 2022-present Double
+
+sidebarDepth: 10
 ---

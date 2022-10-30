@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.7",
-    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar",
-    "vuepress-plugin-permalink-pinyin": "^1.1.0",
-    "vuepress-plugin-rpurl": "github:boboidream/vuepress-plugin-rpurl"
+    "vuepress": "^1.9.7"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }

@@ -1,5 +1,5 @@
 ---
-sidebar: auto
+sidebarDepth: 10
 ---
 
 # 运维
