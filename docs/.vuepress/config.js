@@ -34,11 +34,11 @@ module.exports = {
         items: [
           {
             text: "Web",
-            link: "/backend/web/",
+            link: "/backend/web/README.md",
           },
           {
-            text: "HTML",
-            link: "/backend/bigdata/",
+            text: "大数据",
+            link: "/backend/bigdata/README.md",
           },
           {
             text: "高并发系统",
@@ -99,13 +99,13 @@ module.exports = {
       "/backend/web/": [
         {
           title: "Web",
-          children: ["web/"],
+          children: [""],
         },
       ],
       "/backend/bigdata/": [
         {
           title: "大数据",
-          children: ["bigdata/"],
+          children: [""],
         },
       ],
       "/backend/high-concurrency/": genHighCourrency(),
