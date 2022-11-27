@@ -34,11 +34,11 @@ module.exports = {
         items: [
           {
             text: "Web",
-            link: "/backend/web/README.md",
+            link: "/backend/web/",
           },
           {
             text: "大数据",
-            link: "/backend/bigdata/README.md",
+            link: "/backend/bigdata/",
           },
           {
             text: "高并发系统",
@@ -99,16 +99,20 @@ module.exports = {
       "/backend/web/": [
         {
           title: "Web",
-          children: [""],
+          collapsable: false,
+          sidebarDepth: 2,
+          children: ["Guide.md"],
         },
       ],
       "/backend/bigdata/": [
         {
           title: "大数据",
+          collapsable: false,
+          sidebarDepth: 2,
           children: [""],
         },
       ],
-      "/backend/high-concurrency/": genHighCourrency(),
+      "/backend/high-concurrency/": genHighConcurrency(),
       "/backend/spring/": genSpring(),
       "/devops/": [
         "",
@@ -130,7 +134,7 @@ module.exports = {
   plugins: [["vuepress-plugin-code-copy", true]],
 };
 
-function genHighCourrency() {
+function genHighConcurrency() {
   return [
     {
       title: "高并发系统认知",
