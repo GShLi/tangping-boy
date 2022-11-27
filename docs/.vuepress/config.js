@@ -131,7 +131,13 @@ module.exports = {
     },
     lastUpdated: "上次修改时间",
   },
-  plugins: [["vuepress-plugin-code-copy", true]],
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@img': '/images'
+      }
+    }
+  }
 };
 
 function genHighConcurrency() {
