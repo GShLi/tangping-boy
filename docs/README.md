@@ -10,4 +10,11 @@ features:
 footer: MIT Licensed | Copyright © 2022-present Double
 ---
 
-TODO:
+# TODO ✅ ❌
+
+看一下 etcd ❌
+
+## 不知道的名词
+
+1. overlay 网络
+2. Flannel

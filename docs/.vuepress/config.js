@@ -52,7 +52,16 @@ module.exports = {
       },
       {
         text: "运维",
-        link: "/devops/",
+        items: [
+          {
+            text: "Docker",
+            link: "/devops/docker/00.Docker基本使用",
+          },
+          {
+            text: "Kubernates",
+            link: "/devops/kubernates/01.安装",
+          },
+        ],
       },
       {
         text: "软件工具",
@@ -114,19 +123,8 @@ module.exports = {
       ],
       "/backend/high-concurrency/": genHighConcurrency(),
       "/backend/spring/": genSpring(),
-      "/devops/": [
-        "",
-        {
-          title: "Docker",
-          collapsable: true,
-          children: [
-            "docker/",
-            "docker/00.Docker基本使用",
-            "docker/01.Docker网络",
-            "docker/02.阿里云镜像仓库",
-          ],
-        },
-      ],
+      "/devops/docker/": genDocker(),
+      "/devops/kubernates/": genKubernates(),
       "/tools/": [""],
     },
     lastUpdated: "上次修改时间",
@@ -134,10 +132,10 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@img': '/images'
-      }
-    }
-  }
+        "@img": "/images",
+      },
+    },
+  },
 };
 
 function genHighConcurrency() {
@@ -225,6 +223,124 @@ function genSpring() {
         "19.【手写Spring】事务处理.md",
         "20.【手写Spring】ORM框架实现.md",
         "21.【手写Spring】将ORM框架整合到SpringBean容器中.md",
+      ],
+    },
+  ];
+}
+
+function genDocker() {
+  return [
+    {
+      title: "Docker",
+      collapsable: true,
+      sidebarDepth: 2,
+      children: ["00.Docker基本使用", "01.Docker网络", "02.阿里云镜像仓库"],
+    },
+  ];
+}
+
+function genKubernates() {
+  return [
+    {
+      title: "容器技术概念入门",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s1/01.进程.md",
+        "s1/02.隔离与限制.md",
+        "s1/03.深入理解容器镜像.md",
+        "s1/04.重新认识Docker容器.md",
+        "s1/05.Kubernates的本质.md",
+      ],
+    },
+    {
+      title: "K8S集群搭建与实践",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s2/01.Kubernetes一键部署利器:kubeadm.md",
+        "s2/02.从0到1:搭建一个完整的Kubernetes集群.md",
+        "s2/03.牛刀小试:我的第一个容器化应用.md",
+      ],
+    },
+    {
+      title: "容器编排与K8S作业管理",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s3/01.为什么我们需要Pod.md",
+        "s3/02.深入理解Pod对象-基本概念.md",
+        "s3/03.深入理解Pod对象-使用进阶.md",
+        "s3/04.控制器模型.md",
+        "s3/05.作业副本与水平扩展.md",
+        "s3/06.深入理解StateFulSet-拓扑状态.md",
+        "s3/07.深入理解StateFulSet-存储状态.md",
+        "s3/08.深入理解StateFulSet-有状态应用实践.md",
+        "s3/09.容器化守护进程的意义-DaemonSet.md",
+        "s3/10.撬动离线业务-Job与CronJob.md",
+        "s3/11.声明式API与Kubernates编程规范.md",
+        "s3/12.深入理解声明式API-API对象的奥秘.md",
+        "s3/13.深入理解声明式API-编写自定义控制器.md",
+        "s3/14.基于角色的权限控制-RBAC.md",
+        "s3/15.Operator工作原理解读.md",
+      ],
+    },
+    {
+      title: "K8S持久化存储",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s4/01.PV、PVC、StorageClass,这些到底在说啥?.md",
+        "s4/02.PV、PVC体系是不是多此一举?从本地持久化卷谈起.md",
+        "s4/03.编写自己的存储插件:FlexVolume与CSI.md",
+        "s4/04.容器存储实践:CSI插件编写指南.md",
+      ],
+    },
+    {
+      title: "K8S容器网络",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s5/01.浅谈容器网络.md",
+        "s5/02.深入解析容器跨主机网络.md",
+        "s5/03.Kubernetes网络模型与CNI网络插件.md",
+        "s5/04.解读Kubernetes三层网络方案.md",
+        "s5/05.为什么说Kubernetes只有softmulti-tenancy?.md",
+        "s5/06.找到容器不容易:Service、DNS与服务发现.md",
+        "s5/07.从外界连通Service与Service调试“三板斧”.md",
+        "s5/08.谈谈Service与Ingress.md",
+      ],
+    },
+    {
+      title: "K8S作业调度与资源管理",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s6/01.Kubernetes的资源模型与资源管理.md",
+        "s6/02.十字路口上的Kubernetes默认调度器.md",
+        "s6/03.Kubernetes默认调度器调度策略解析.md",
+        "s6/04.Kubernetes默认调度器的优先级与抢占机制.md",
+        "s6/05.KubernetesGPU管理与DevicePlugin机制.md",
+      ],
+    },
+    {
+      title: "K8S容器运行时",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s7/01.幕后英雄:SIG-Node与CRI.md",
+        "s7/02.解读CRI与容器运行时.md",
+        "s7/03.绝不仅仅是安全:KataContainers与gVisor.md",
+      ],
+    },
+    {
+      title: "K8S容器监控与日志",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s8/01.Prometheus、MetricsServer与Kubernetes监控体系.md",
+        "s8/02.CustomMetrics:让AutoScaling不再“食之无味”.md",
+        "s8/03.让日志无处可逃：容器日志收集与管理.md",
       ],
     },
   ];
