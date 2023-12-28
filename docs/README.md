@@ -1,7 +1,7 @@
 ---
 home: true
 actionText: 开始内卷 →
-actionLink: /qian-duan/html/
+actionLink: /frontend/html/
 features:
   - title: 躺平至上
     details: 以躺平为中心
