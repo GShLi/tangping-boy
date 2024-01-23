@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: "UI设计",
+        text: "设计",
         link: "/ui/",
       },
       {
