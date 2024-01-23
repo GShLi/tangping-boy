@@ -9,6 +9,15 @@ module.exports = {
         link: "/ui/",
       },
       {
+        text: "面向对象",
+        items: [
+          {
+            text: "设计模式",
+            link: "/develop/design-patterns/",
+          },
+        ],
+      },
+      {
         text: "前端",
         items: [
           {
@@ -27,14 +36,9 @@ module.exports = {
             text: "TypeScript",
             link: "/frontend/typescript/",
           },
-        ],
-      },
-      {
-        text: "面向对象",
-        items: [
           {
-            text: "设计模式",
-            link: "/develop/design-patterns/",
+            text: "Vue2",
+            link: "/frontend/vue/",
           },
         ],
       },
@@ -96,28 +100,11 @@ module.exports = {
           children: ["sketch/", "sketch/1"],
         },
       ],
-      "/frontend/": [
-        {
-          title: "HTML",
-          collapsable: true,
-          children: ["html/", "html/1"],
-        },
-        {
-          title: "CSS",
-          collapsable: true,
-          children: ["css/", "css/1"],
-        },
-        {
-          title: "JavaScript",
-          collapsable: true,
-          children: ["javascript/"],
-        },
-        {
-          title: "TypeScript",
-          collapsable: true,
-          children: ["typescript/"],
-        },
-      ],
+      "/frontend/html/": genHtml(),
+      "/frontend/css/": genCss(),
+      "/frontend/javascript/": genJavaScript(),
+      "/frontend/typescript/": genTypeScript(),
+      "/frontend/vue/": genVue2(),
       "/develop/design-patterns/": genDesignPatterns(),
       "/backend/web/": [
         {
@@ -139,6 +126,7 @@ module.exports = {
       "/backend/spring/": genSpring(),
       "/devops/docker/": genDocker(),
       "/devops/kubernates/": genKubernates(),
+      "/project/": getProject(),
       "/tools/": [""],
     },
     lastUpdated: "上次修改时间",
@@ -151,6 +139,57 @@ module.exports = {
     },
   },
 };
+
+function genHtml() {
+  return [
+    {
+      title: "HTML",
+      collapsable: true,
+      children: ["html/", "html/1"],
+    },
+  ];
+}
+
+function genCss() {
+  return [
+    {
+      title: "CSS",
+      collapsable: true,
+      children: ["css/", "css/1"],
+    },
+  ];
+}
+
+function genJavaScript() {
+  return [
+    {
+      title: "JavaScript",
+      collapsable: true,
+      children: ["javascript/"],
+    },
+  ];
+}
+
+function genTypeScript() {
+  return [
+    {
+      title: "TypeScript",
+      collapsable: true,
+      children: ["typescript/"],
+    },
+  ];
+}
+
+function genVue2() {
+  return [
+    {
+      title: "Vue",
+      collapsable: true,
+      sidebarDepth: 2,
+      children: ["README.md", "中文链接转拼音.md"],
+    },
+  ];
+}
 
 function genHighConcurrency() {
   return [
@@ -393,6 +432,17 @@ function genDesignPatterns() {
       collapsable: false,
       sidebarDepth: 2,
       children: ["s1-创建型模式/01.工厂方法模式.md"],
+    },
+  ];
+}
+
+function getProject() {
+  return [
+    {
+      title: "二维码扫描登录原理",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["01.二维码扫描登录原理.md"],
     },
   ];
 }

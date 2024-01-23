@@ -2,7 +2,9 @@
 
 ## 参考资源
 
-[重学 Java 设计模式]<<https://bugstack.cn/md/develop/design-pattern/2020-05-20-%> E9%87%8D% E5% AD% A6Java% E8% AE% BE% E8% AE% A1% E6% A8% A1% E5% BC%8F% E3%80%8A% E5% AE%9E% E6%88%98% E5% B7% A5% E5%8E%82% E6%96% B9% E6% B3%95% E6% A8% A1% E5% BC%8F% E3%80%8B.html>
+[重学 Java 设计模式](https://bugstack.cn)
+
+[refactoringguru](https://refactoringguru.cn/design-patterns)
 
 ## 什么是设计模式？
 
