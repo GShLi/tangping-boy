@@ -30,6 +30,15 @@ module.exports = {
         ],
       },
       {
+        text: "面向对象",
+        items: [
+          {
+            text: "设计模式",
+            link: "/develop/design-patterns/",
+          },
+        ],
+      },
+      {
         text: "后端",
         items: [
           {
@@ -62,6 +71,10 @@ module.exports = {
             link: "/devops/kubernates/01.安装",
           },
         ],
+      },
+      {
+        text: "实战项目",
+        link: "/project/",
       },
       {
         text: "软件工具",
@@ -105,6 +118,7 @@ module.exports = {
           children: ["typescript/"],
         },
       ],
+      "/develop/design-patterns/": genDesignPatterns(),
       "/backend/web/": [
         {
           title: "Web",
@@ -242,6 +256,11 @@ function genDocker() {
 function genKubernates() {
   return [
     {
+      title: "安装",
+      sidebarDepth: 1,
+      children: ["01.安装.md"],
+    },
+    {
       title: "容器技术概念入门",
       collapsable: false,
       sidebarDepth: 2,
@@ -342,6 +361,38 @@ function genKubernates() {
         "s8/02.CustomMetrics:让AutoScaling不再“食之无味”.md",
         "s8/03.让日志无处可逃：容器日志收集与管理.md",
       ],
+    },
+  ];
+}
+
+function genDesignPatterns() {
+  return [
+    {
+      title: "设计模式",
+      collapsable: false,
+      children: ["README.md"],
+    },
+    {
+      title: "创建型模式",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s1-创建型模式/01.工厂方法模式.md",
+        "s1-创建型模式/02.抽象工厂模式.md",
+        "s1-创建型模式/03.生成器模式.md",
+      ],
+    },
+    {
+      title: "结构型模式",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["s1-创建型模式/01.工厂方法模式.md"],
+    },
+    {
+      title: "行为模式",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["s1-创建型模式/01.工厂方法模式.md"],
     },
   ];
 }
