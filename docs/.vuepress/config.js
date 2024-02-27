@@ -78,7 +78,16 @@ module.exports = {
       },
       {
         text: "实战项目",
-        link: "/project/",
+        items: [
+          {
+            text: "布尔商城",
+            link: "/project/doublemall/",
+          },
+          {
+            text: "二维码扫描登录原理",
+            link: "/project/qrcode-login/01.二维码扫描登录原理.md",
+          },
+        ],
       },
       {
         text: "软件工具",
@@ -126,7 +135,7 @@ module.exports = {
       "/backend/spring/": genSpring(),
       "/devops/docker/": genDocker(),
       "/devops/kubernates/": genKubernates(),
-      "/project/": getProject(),
+      "/project/doublemall/": getDoubleMall(),
       "/tools/": [""],
     },
     lastUpdated: "上次修改时间",
@@ -442,7 +451,45 @@ function getProject() {
       title: "二维码扫描登录原理",
       collapsable: false,
       sidebarDepth: 1,
-      children: ["01.二维码扫描登录原理.md"],
+      children: ["/project/01.二维码扫描登录原理.md"],
+    },
+  ];
+}
+
+function getDoubleMall() {
+  return [
+    {
+      title: "前言",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["01.intro/01.学习计划.md", "01.intro/02.项目架构.md"],
+    },
+    {
+      title: "技术总和",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["02.tech/02.分布式技术.md"],
+    },
+    {
+      title: "开发准备",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["02.tech/02.分布式技术.md"],
+    },
+    {
+      title: "分布式基础篇",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: [
+        "04.basic/01.分类维护-树形结构构建方法.md",
+        "04.basic/02.分类维护API-跨域问题的原理及处理方案.md",
+      ],
+    },
+    {
+      title: "分布式高级篇",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["02.tech/02.分布式技术.md"],
     },
   ];
 }
