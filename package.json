@@ -7,8 +7,8 @@
     "vuepress": "^1.9.7"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "docs:build": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
   },
   "dependencies": {
     "vuepress-plugin-code-copy": "^1.0.6"
