@@ -325,9 +325,9 @@ function genKubernates() {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        "s2/01.Kubernetes一键部署利器:kubeadm.md",
-        "s2/02.从0到1:搭建一个完整的Kubernetes集群.md",
-        "s2/03.牛刀小试:我的第一个容器化应用.md",
+        "s2/01.Kubernetes一键部署利器-kubeadm.md",
+        "s2/02.从0到1-搭建一个完整的Kubernetes集群.md",
+        "s2/03.牛刀小试-我的第一个容器化应用.md",
       ],
     },
     {
@@ -357,10 +357,10 @@ function genKubernates() {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        "s4/01.PV、PVC、StorageClass,这些到底在说啥?.md",
-        "s4/02.PV、PVC体系是不是多此一举?从本地持久化卷谈起.md",
-        "s4/03.编写自己的存储插件:FlexVolume与CSI.md",
-        "s4/04.容器存储实践:CSI插件编写指南.md",
+        "s4/01.PV_PVC_StorageClass,这些到底在说啥.md",
+        "s4/02.PV_PVC体系是不是多此一举,从本地持久化卷谈起.md",
+        "s4/03.编写自己的存储插件-FlexVolume与CSI.md",
+        "s4/04.容器存储实践-CSI插件编写指南.md",
       ],
     },
     {
@@ -372,9 +372,9 @@ function genKubernates() {
         "s5/02.深入解析容器跨主机网络.md",
         "s5/03.Kubernetes网络模型与CNI网络插件.md",
         "s5/04.解读Kubernetes三层网络方案.md",
-        "s5/05.为什么说Kubernetes只有softmulti-tenancy?.md",
-        "s5/06.找到容器不容易:Service、DNS与服务发现.md",
-        "s5/07.从外界连通Service与Service调试“三板斧”.md",
+        "s5/05.为什么说Kubernetes只有softmulti-tenancy.md",
+        "s5/06.找到容器不容易-Service_DNS与服务发现.md",
+        "s5/07.从外界连通Service与Service调试三板斧.md",
         "s5/08.谈谈Service与Ingress.md",
       ],
     },
@@ -395,9 +395,9 @@ function genKubernates() {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        "s7/01.幕后英雄:SIG-Node与CRI.md",
+        "s7/01.幕后英雄_SIG-Node与CRI.md",
         "s7/02.解读CRI与容器运行时.md",
-        "s7/03.绝不仅仅是安全:KataContainers与gVisor.md",
+        "s7/03.绝不仅仅是安全_KataContainers与gVisor.md",
       ],
     },
     {
@@ -405,9 +405,9 @@ function genKubernates() {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        "s8/01.Prometheus、MetricsServer与Kubernetes监控体系.md",
-        "s8/02.CustomMetrics:让AutoScaling不再“食之无味”.md",
-        "s8/03.让日志无处可逃：容器日志收集与管理.md",
+        "s8/01.Prometheus_MetricsServer与Kubernetes监控体系.md",
+        "s8/02.CustomMetrics_让AutoScaling不再食之无味.md",
+        "s8/03.让日志无处可逃_容器日志收集与管理.md",
       ],
     },
   ];
