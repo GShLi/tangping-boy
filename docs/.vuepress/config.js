@@ -50,6 +50,10 @@ module.exports = {
             link: "/backend/web/",
           },
           {
+            text: "Java",
+            link: "/backend/java/",
+          },
+          {
             text: "大数据",
             link: "/backend/bigdata/",
           },
@@ -123,6 +127,7 @@ module.exports = {
           children: ["Guide.md"],
         },
       ],
+      "/backend/java/": genJava(),
       "/backend/bigdata/": [
         {
           title: "大数据",
@@ -492,4 +497,25 @@ function getDoubleMall() {
       children: ["02.tech/02.分布式技术.md"],
     },
   ];
+}
+
+function genJava() {
+  
+  return [
+    {
+      title: "Java 多线程",
+      collapsable: false,
+      sidebarDepth: 1,
+      children : genJavaJUC()
+    }
+  ]
+}
+
+function genJavaJUC() {
+  return [
+    "JUC/00.总览.md",
+    "JUC/01.如何创建线程.md",
+    "JUC/02.如何停止线程.md",
+    "JUC/03.线程的状态转换.md",
+  ]
 }
