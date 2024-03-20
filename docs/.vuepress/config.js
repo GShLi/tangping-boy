@@ -421,11 +421,6 @@ function genKubernates() {
 function genDesignPatterns() {
   return [
     {
-      title: "设计模式",
-      collapsable: false,
-      children: ["README.md"],
-    },
-    {
       title: "创建型模式",
       collapsable: false,
       sidebarDepth: 2,
