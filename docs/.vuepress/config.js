@@ -4,10 +4,10 @@ module.exports = {
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   themeConfig: {
     nav: [
-      {
-        text: "设计",
-        link: "/ui/",
-      },
+      // {
+      //   text: "设计",
+      //   link: "/ui/",
+      // },
       {
         text: "面向对象",
         items: [
@@ -17,50 +17,50 @@ module.exports = {
           },
         ],
       },
-      {
-        text: "前端",
-        items: [
-          {
-            text: "HTML",
-            link: "/frontend/html/",
-          },
-          {
-            text: "CSS",
-            link: "/frontend/css/",
-          },
-          {
-            text: "JavaScript",
-            link: "/frontend/javascript/",
-          },
-          {
-            text: "TypeScript",
-            link: "/frontend/typescript/",
-          },
-          {
-            text: "Vue2",
-            link: "/frontend/vue/",
-          },
-        ],
-      },
+      // {
+      //   text: "前端",
+      //   items: [
+      //     {
+      //       text: "HTML",
+      //       link: "/frontend/html/",
+      //     },
+      //     {
+      //       text: "CSS",
+      //       link: "/frontend/css/",
+      //     },
+      //     {
+      //       text: "JavaScript",
+      //       link: "/frontend/javascript/",
+      //     },
+      //     {
+      //       text: "TypeScript",
+      //       link: "/frontend/typescript/",
+      //     },
+      //     {
+      //       text: "Vue2",
+      //       link: "/frontend/vue/",
+      //     },
+      //   ],
+      // },
       {
         text: "后端",
         items: [
-          {
-            text: "Web",
-            link: "/backend/web/",
-          },
+          // {
+          //   text: "Web",
+          //   link: "/backend/web/",
+          // },
           {
             text: "Java",
             link: "/backend/java/",
           },
-          {
-            text: "大数据",
-            link: "/backend/bigdata/",
-          },
-          {
-            text: "高并发系统",
-            link: "/backend/high-concurrency/s1/01.【高并发系统】什么是高并发系统？",
-          },
+          // {
+          //   text: "大数据",
+          //   link: "/backend/bigdata/",
+          // },
+          // {
+          //   text: "高并发系统",
+          //   link: "/backend/high-concurrency/s1/01.【高并发系统】什么是高并发系统？",
+          // },
           {
             text: "手写 Spring",
             link: "/backend/spring/01.【手写Spring】实现一个简单的SpringBean容器.md",
@@ -97,10 +97,10 @@ module.exports = {
         text: "软件工具",
         link: "/tools/",
       },
-      {
-        text: "时光机",
-        link: "/archive/",
-      },
+      // {
+      //   text: "时光机",
+      //   link: "/archive/",
+      // },
       { text: "Gitee", link: "https://gitee.com/Double_Float/" },
       { text: "Github", link: "https://github.com/Double327/" },
     ],
