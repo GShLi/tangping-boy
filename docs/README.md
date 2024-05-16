@@ -14,6 +14,7 @@ footer: MIT Licensed | Copyright © 2024-present Double
 
 1. 看一下 etcd ❌
 2. 实现一下解决 CORS 问题的两种方法 ❌
+3. 整理一下 conditional 的使用<https://segmentfault.com/q/1010000042868741>
 
 ## 问题
 
