@@ -21,6 +21,10 @@ footer: MIT Licensed | Copyright © 2024-present Double
 7. [❌] 整理一下 conditional 的使用<https://segmentfault.com/q/1010000042868741>
 8. [❌] 看一下 Gradle
 9. [❌] 看一下 Maven
+10. [❌] 线程池了解一下，了解各个线程池的优缺点。
+11. [❌] Redis 数据类型及其应用了解一下，每种数据类型及其实现至少要能够说出两种应用场景
+12. [❌] Rabbit MQ 的应用场景至少要知道 5 个
+13. [❌] Redis 中过期时间的实现方式是什么
 
 ## 问题
 
