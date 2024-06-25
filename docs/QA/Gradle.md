@@ -1,0 +1,1 @@
+# Cause: class jdk.internal.loader.ClassLoaders$PlatformClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$PlatformClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')
