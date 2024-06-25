@@ -13,18 +13,32 @@ footer: MIT Licensed | Copyright © 2024-present Double
 # TODO ✅ ❌
 
 1. [❌] 根据思维导图整理 Redis 文章
+
 2. [❌] RabbitMQ
+
 3. [❌] 看一下 JUC 
+
 4. [❌] 学习 K8S
+
 5. [❌] 看一下 etcd
+
 6. [❌] 实现一下解决 CORS 问题的两种方法
+
 7. [❌] 整理一下 conditional 的使用<https://segmentfault.com/q/1010000042868741>
+
 8. [❌] 看一下 Gradle
+
 9. [❌] 看一下 Maven
+
 10. [❌] 线程池了解一下，了解各个线程池的优缺点。
+
 11. [❌] Redis 数据类型及其应用了解一下，每种数据类型及其实现至少要能够说出两种应用场景
+
 12. [❌] Rabbit MQ 的应用场景至少要知道 5 个
+
 13. [❌] Redis 中过期时间的实现方式是什么
+
+14. [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
 
 ## 问题
 
