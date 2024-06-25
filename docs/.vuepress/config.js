@@ -65,6 +65,14 @@ module.exports = {
             text: "手写 Spring",
             link: "/backend/spring/01.【手写Spring】实现一个简单的SpringBean容器.md",
           },
+          {
+            text: "Redis",
+            link: "/backend/redis/"
+          },
+          {
+            text: "RabbitMQ",
+            link: "/backend/rabbitmq/"
+          }
         ],
       },
       {
@@ -138,6 +146,8 @@ module.exports = {
       ],
       "/backend/high-concurrency/": genHighConcurrency(),
       "/backend/spring/": genSpring(),
+      "/backend/redis/": genRedis(),
+      "/backend/rabbitmq/": genRabbitMQ(),
       "/devops/docker/": genDocker(),
       "/devops/kubernates/": genKubernates(),
       "/project/doublemall/": getDoubleMall(),
@@ -293,6 +303,34 @@ function genSpring() {
       ],
     },
   ];
+}
+
+function genRedis() {
+  return [
+    {
+      title: "Redis 基础",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s1/01.Redis命令执行流程.md",
+        "s1/02.Redis基础架构-数据模型和操作接口.md",
+        "s1/03.Redis中使用的数据结构.md"
+      ]
+    }
+  ]
+}
+
+function genRabbitMQ() {
+  return [
+    {
+      title: "RabbitMQ 基础",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "s1/00.安装RabbitMQ.md"
+      ]
+    }
+  ]
 }
 
 function genDocker() {
