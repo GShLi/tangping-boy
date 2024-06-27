@@ -13,7 +13,7 @@ module.exports = {
         items: [
           {
             text: "设计模式",
-            link: "/develop/design-patterns/",
+            link: "/develop/design-patterns/README.md",
           },
         ],
       },
@@ -51,7 +51,7 @@ module.exports = {
           // },
           {
             text: "Java",
-            link: "/backend/java/",
+            link: "/backend/java/README.md",
           },
           // {
           //   text: "大数据",
@@ -63,15 +63,15 @@ module.exports = {
           // },
           {
             text: "手写 Spring",
-            link: "/backend/spring/01.【手写Spring】实现一个简单的SpringBean容器.md",
+            link: "/backend/spring/README.md",
           },
           {
             text: "Redis",
-            link: "/backend/redis/"
+            link: "/backend/redis/README.md"
           },
           {
             text: "RabbitMQ",
-            link: "/backend/rabbitmq/"
+            link: "/backend/rabbitmq/README.md"
           }
         ],
       },
@@ -80,15 +80,15 @@ module.exports = {
         items: [
           {
             text: "Docker",
-            link: "/devops/docker/00.Docker基本使用",
+            link: "/devops/docker/README.md",
           },
           {
             text: "Kubernates",
-            link: "/devops/kubernates/01.安装",
+            link: "/devops/kubernates/README.md",
           },
           {
             text: "Linux",
-            link: "/devops/linux/"
+            link: "/devops/linux/README.md"
           }
         ],
       },
@@ -97,17 +97,17 @@ module.exports = {
         items: [
           {
             text: "布尔商城",
-            link: "/project/doublemall/",
+            link: "/project/doublemall/README.md",
           },
           {
             text: "二维码扫描登录原理",
-            link: "/project/qrcode-login/01.二维码扫描登录原理.md",
+            link: "/project/qrcode-login/README.md",
           },
         ],
       },
       {
         text: "软件工具",
-        link: "/tools/",
+        link: "/tools/README.md",
       },
       // {
       //   text: "时光机",
@@ -223,6 +223,12 @@ function genVue2() {
 function genHighConcurrency() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "高并发系统认知",
       collapsable: false,
       sidebarDepth: 2,
@@ -280,6 +286,12 @@ function genHighConcurrency() {
 function genSpring() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "手写 Spring",
       collapsable: false,
       sidebarDepth: 2,
@@ -313,6 +325,12 @@ function genSpring() {
 function genRedis() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "Redis 基础",
       collapsable: false,
       sidebarDepth: 2,
@@ -328,6 +346,12 @@ function genRedis() {
 function genRabbitMQ() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "RabbitMQ 基础",
       collapsable: false,
       sidebarDepth: 2,
@@ -341,6 +365,12 @@ function genRabbitMQ() {
 function genDocker() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "Docker",
       collapsable: true,
       sidebarDepth: 2,
@@ -352,9 +382,10 @@ function genDocker() {
 function genKubernates() {
   return [
     {
-      title: "安装",
-      sidebarDepth: 1,
-      children: ["01.安装.md"],
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md", "01.安装.md"]
     },
     // {
     //   title: "容器技术概念入门",
@@ -464,6 +495,12 @@ function genKubernates() {
 function genLinux() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "Centos",
       collapsable: false,
       sidebarDepth: 2,
@@ -489,6 +526,12 @@ function genLinux() {
 
 function genDesignPatterns() {
   return [
+    {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
     {
       title: "创建型模式",
       collapsable: false,
@@ -517,6 +560,12 @@ function genDesignPatterns() {
 function getProject() {
   return [
     {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
+    {
       title: "二维码扫描登录原理",
       collapsable: false,
       sidebarDepth: 1,
@@ -527,6 +576,12 @@ function getProject() {
 
 function getDoubleMall() {
   return [
+    {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
     {
       title: "前言",
       collapsable: false,
@@ -566,6 +621,12 @@ function getDoubleMall() {
 function genJava() {
   
   return [
+    {
+      title: "介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: ["README.md"]
+    },
     {
       title: "Java 多线程",
       collapsable: false,
