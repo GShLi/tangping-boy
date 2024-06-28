@@ -13,7 +13,7 @@ module.exports = {
         items: [
           {
             text: "设计模式",
-            link: "/develop/design-patterns/README.md",
+            link: "/develop/design-patterns/",
           },
         ],
       },
@@ -51,7 +51,7 @@ module.exports = {
           // },
           {
             text: "Java",
-            link: "/backend/java/README.md",
+            link: "/backend/java/",
           },
           // {
           //   text: "大数据",
@@ -63,15 +63,15 @@ module.exports = {
           // },
           {
             text: "手写 Spring",
-            link: "/backend/spring/README.md",
+            link: "/backend/spring/",
           },
           {
             text: "Redis",
-            link: "/backend/redis/README.md"
+            link: "/backend/redis/"
           },
           {
             text: "RabbitMQ",
-            link: "/backend/rabbitmq/README.md"
+            link: "/backend/rabbitmq/"
           }
         ],
       },
@@ -80,15 +80,15 @@ module.exports = {
         items: [
           {
             text: "Docker",
-            link: "/devops/docker/README.md",
+            link: "/devops/docker/",
           },
           {
             text: "Kubernates",
-            link: "/devops/kubernates/README.md",
+            link: "/devops/kubernates/",
           },
           {
             text: "Linux",
-            link: "/devops/linux/README.md"
+            link: "/devops/linux/"
           }
         ],
       },
@@ -97,17 +97,17 @@ module.exports = {
         items: [
           {
             text: "布尔商城",
-            link: "/project/doublemall/README.md",
+            link: "/project/doublemall/",
           },
           {
             text: "二维码扫描登录原理",
-            link: "/project/qrcode-login/README.md",
+            link: "/project/qrcode-login/",
           },
         ],
       },
       {
         text: "软件工具",
-        link: "/tools/README.md",
+        link: "/tools/",
       },
       // {
       //   text: "时光机",
@@ -127,8 +127,8 @@ module.exports = {
       ],
       "/frontend/html/": genHtml(),
       "/frontend/css/": genCss(),
-      "/frontend/javascript/": genJavaScript(),
-      "/frontend/typescript/": genTypeScript(),
+      // "/frontend/javascript/": genJavaScript(),
+      // "/frontend/typescript/": genTypeScript(),
       "/frontend/vue/": genVue2(),
       "/develop/design-patterns/": genDesignPatterns(),
       "/backend/web/": [
@@ -174,7 +174,7 @@ function genHtml() {
     {
       title: "HTML",
       collapsable: true,
-      children: ["html/", "html/1"],
+      children: ["Guide.md"],
     },
   ];
 }
@@ -184,7 +184,7 @@ function genCss() {
     {
       title: "CSS",
       collapsable: true,
-      children: ["css/", "css/1"],
+      children: ["Guide.md"],
     },
   ];
 }
@@ -194,7 +194,7 @@ function genJavaScript() {
     {
       title: "JavaScript",
       collapsable: true,
-      children: ["javascript/"],
+      children: ["Guide.md"],
     },
   ];
 }
@@ -204,7 +204,7 @@ function genTypeScript() {
     {
       title: "TypeScript",
       collapsable: true,
-      children: ["typescript/"],
+      children: ["Guide.md"],
     },
   ];
 }
@@ -215,19 +215,13 @@ function genVue2() {
       title: "Vue",
       collapsable: true,
       sidebarDepth: 2,
-      children: ["README.md", "中文链接转拼音.md"],
+      children: ["", "中文链接转拼音.md"],
     },
   ];
 }
 
 function genHighConcurrency() {
   return [
-    {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
     {
       title: "高并发系统认知",
       collapsable: false,
@@ -286,12 +280,6 @@ function genHighConcurrency() {
 function genSpring() {
   return [
     {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
-    {
       title: "手写 Spring",
       collapsable: false,
       sidebarDepth: 2,
@@ -325,12 +313,6 @@ function genSpring() {
 function genRedis() {
   return [
     {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
-    {
       title: "Redis 基础",
       collapsable: false,
       sidebarDepth: 2,
@@ -346,12 +328,6 @@ function genRedis() {
 function genRabbitMQ() {
   return [
     {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
-    {
       title: "RabbitMQ 基础",
       collapsable: false,
       sidebarDepth: 2,
@@ -364,12 +340,6 @@ function genRabbitMQ() {
 
 function genDocker() {
   return [
-    {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
     {
       title: "Docker",
       collapsable: true,
@@ -385,7 +355,7 @@ function genKubernates() {
       title: "介绍",
       collapsable: false,
       sidebarDepth: 2,
-      children: ["README.md", "01.安装.md"]
+      children: ["", "01.安装.md"]
     },
     // {
     //   title: "容器技术概念入门",
@@ -495,12 +465,6 @@ function genKubernates() {
 function genLinux() {
   return [
     {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
-    {
       title: "Centos",
       collapsable: false,
       sidebarDepth: 2,
@@ -526,12 +490,6 @@ function genLinux() {
 
 function genDesignPatterns() {
   return [
-    {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
     {
       title: "创建型模式",
       collapsable: false,
@@ -560,12 +518,6 @@ function genDesignPatterns() {
 function getProject() {
   return [
     {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
-    {
       title: "二维码扫描登录原理",
       collapsable: false,
       sidebarDepth: 1,
@@ -576,12 +528,6 @@ function getProject() {
 
 function getDoubleMall() {
   return [
-    {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
     {
       title: "前言",
       collapsable: false,
@@ -621,12 +567,6 @@ function getDoubleMall() {
 function genJava() {
   
   return [
-    {
-      title: "介绍",
-      collapsable: false,
-      sidebarDepth: 2,
-      children: ["README.md"]
-    },
     {
       title: "Java 多线程",
       collapsable: false,
