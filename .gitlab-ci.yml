@@ -8,7 +8,7 @@ image: nikolaik/python-nodejs:python3.9-nodejs12-alpine
 stages:  
   - install dependencies
   - build
-  # - deploy
+  - deploy
  
 cache: &global_cache
   key: ${CI_COMMIT_REF_SLUG}
