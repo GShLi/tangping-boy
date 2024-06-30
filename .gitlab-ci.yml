@@ -1,0 +1,53 @@
+services:
+  - docker:20.10.6-dind
+ 
+# node:16-alpine3.11
+image: nikolaik/python-nodejs:python3.9-nodejs12-alpine
+ 
+# 首先按顺序定义有几个步骤。步骤下面的所有job是同步执行的
+stages:  
+  - install dependencies
+  - build
+  # - deploy
+ 
+cache: &global_cache
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules
+    - dist
+ 
+dependencies:
+  stage: install dependencies
+  script:
+    - yarn install
+  tags:
+    - k8s
+ 
+ 
+build:
+  stage: build
+  script:
+    - yarn run docs:build
+  tags:
+    - k8s
+ 
+ 
+deploy:
+  image: ubuntu:latest
+  stage: deploy
+  cache: 
+    <<: *global_cache
+    policy: pull
+  before_script:
+    - source .${CI_COMMIT_REF_NAME}.env
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - source .${CI_COMMIT_REF_NAME}.env
+  script:
+    - scp -r dist/* root@$SERVER_IP:/home/www/vue.test.com/
+  tags:
+    - k8s
