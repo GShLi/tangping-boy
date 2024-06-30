@@ -13,7 +13,7 @@ cache: &global_cache
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules
-    - docs/.vuepress/dist/
+    - docs
  
 build:
   stage: build

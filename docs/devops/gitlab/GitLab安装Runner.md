@@ -15,3 +15,15 @@ wget https://gitlab.com/gitlab-org/charts/gitlab-runner/blob/main/values.yaml
 
 helm install --namespace gitlab gitlab-runner -f values.yaml gitlab/gitlab-runner
 ```
+
+```bash
+[runners.cache]
+  Type = "s3"
+  Shared = false
+  [runners.cache.s3]
+    ServerAddress = "192.168.0.121:9000"
+    AccessKey = "4jv1NhIJjay6MOakHQKo"
+    SecretKey = "XJrbJLRTwdQjL7ZRWa0pBDpisVHDtVGaCKs3xToA"
+    BucketName = "gitlab-runner-bucket"
+    Insecure = true
+```
