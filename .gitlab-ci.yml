@@ -40,6 +40,7 @@ deploy:
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - source .${CI_COMMIT_REF_NAME}.env
   script:
+    - ls -l
     - scp -r docs/.vuepress/dist/* root@$SERVER_IP:/home/www/docs.doublefloat.cn/
   tags:
     - k8s
