@@ -13,7 +13,7 @@ cache: &global_cache
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules
-    - dist
+    - docs/.vuepress/dist/
  
 build:
   stage: build
@@ -40,7 +40,7 @@ deploy:
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - source .${CI_COMMIT_REF_NAME}.env
   script:
-    - ls -l
+    - ls docs/.vuepress/
     - scp -r docs/.vuepress/dist/* root@$SERVER_IP:/home/www/docs.doublefloat.cn/
   tags:
     - k8s
