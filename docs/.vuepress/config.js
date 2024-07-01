@@ -63,7 +63,7 @@ module.exports = {
           // },
           {
             text: "手写 Spring",
-            link: "/backend/spring/",
+            link: "/backend/spring/00.Intro.md",
           },
           {
             text: "Redis",
@@ -284,7 +284,7 @@ function genSpring() {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        "00.README.md",
+        "00.Intro.md",
         "01.【手写Spring】实现一个简单的SpringBean容器.md",
         "02.【手写Spring】实现Bean对象的定义、注册和获取.md",
         // "03.【手写Spring】基于Cglib实现含构造函数的类实例化策略.md",
