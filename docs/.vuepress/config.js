@@ -76,6 +76,15 @@ module.exports = {
         ],
       },
       {
+        text: "大数据",
+        items: [
+          {
+            text: "Spark",
+            link: "/bigdata/spark/00.Spark介绍.md"
+          }
+        ]
+      },
+      {
         text: "运维",
         items: [
           {
@@ -152,6 +161,7 @@ module.exports = {
       "/backend/spring/": genSpring(),
       "/backend/redis/": genRedis(),
       "/backend/rabbitmq/": genRabbitMQ(),
+      "/bigdata/spark/": genSpark(),
       "/devops/docker/": genDocker(),
       "/devops/kubernates/": genKubernates(),
       "/devops/linux/": genLinux(),
@@ -334,6 +344,43 @@ function genRabbitMQ() {
       sidebarDepth: 2,
       children: [
         "s1/00.安装RabbitMQ.md"
+      ]
+    }
+  ]
+}
+
+function genSpark() {
+  return [
+    {
+      title: "Spark 介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "00.Spark介绍.md"
+      ]
+    },
+    {
+      title: "Spark Core",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "spark-core/00.SparkCore介绍.md"
+      ]
+    },
+    {
+      title: "Spark SQL",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "spark-sql/00.SparkSQL介绍.md"
+      ]
+    },
+    {
+      title: "Spark Stream",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        "spark-stream/00.SparkStream介绍.md"
       ]
     }
   ]
