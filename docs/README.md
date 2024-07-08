@@ -37,8 +37,14 @@ footer: MIT Licensed | Copyright © 2024-present Double
 12. [❌] Rabbit MQ 的应用场景至少要知道 5 个
 
 13. [❌] Redis 中过期时间的实现方式是什么
+ 
+14. [❌] xcall 命令的作用和用法是什么？
 
-14. [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
+15. [❌] Nginx upstream live 检测的机制是什么？
+
+16. [❌] Java Cyclic Barrier 循环栅栏是什么，什么用处？
+
+17. [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
 
 ## 问题
 
