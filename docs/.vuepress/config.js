@@ -505,13 +505,13 @@ function genDesignPatterns() {
       title: "结构型模式",
       collapsable: false,
       sidebarDepth: 2,
-      children: ["s1-创建型模式/01.工厂方法模式.md"],
+      children: [],
     },
     {
       title: "行为模式",
       collapsable: false,
       sidebarDepth: 2,
-      children: ["s1-创建型模式/01.工厂方法模式.md"],
+      children: ["s3-行为型模式/01.责任链模式.md"],
     },
   ];
 }
