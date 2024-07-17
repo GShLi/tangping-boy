@@ -492,6 +492,12 @@ function genLinux() {
 function genDesignPatterns() {
   return [
     {
+      title: "设计模式介绍",
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [""],
+    },
+    {
       title: "创建型模式",
       collapsable: false,
       sidebarDepth: 2,
