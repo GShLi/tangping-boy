@@ -38,7 +38,13 @@ footer: MIT Licensed | Copyright © 2024-present Double
 
 * [❌] Redis 中过期时间的实现方式是什么
 
+* [❌] xcall 命令的作用和用法是什么？
+
 * [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
+
+* [❌] Nginx upstream live 检测的机制是什么？
+
+* [❌] Java Cyclic Barrier 循环栅栏是什么，什么用处？
 
 ## 问题
 
