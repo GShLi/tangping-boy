@@ -9,8 +9,10 @@
     "vuepress": "^2.0.0-rc.14"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "docs:build": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "win:docs:dev": "vuepress dev docs",
+    "win:docs:build": "vuepress build docs"
   },
   "dependencies": {
     "@vuepress/plugin-copy-code": "^2.0.0-rc.39"
