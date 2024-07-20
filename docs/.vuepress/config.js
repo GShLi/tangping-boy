@@ -1,19 +1,25 @@
-module.exports = {
-  title: "躺平男孩",
-  description: "Just for TangPing!",
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
-  themeConfig: {
-    nav: [
+import {viteBundler} from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from'vuepress'
+
+export default defineUserConfig({
+  bundler: viteBundler(),
+  lang: 'zh-CN',
+  text: '躺平男孩',
+  description: 'Just for TangPing!',
+  theme: defaultTheme({
+    navbar: [
       // {
       //   text: "设计",
       //   link: "/ui/",
       // },
       {
         text: "面向对象",
-        items: [
+        prefix: "/develop/",
+        children: [
           {
             text: "设计模式",
-            link: "/develop/design-patterns/",
+            link: "design-patterns/"
           },
         ],
       },
@@ -44,14 +50,15 @@ module.exports = {
       // },
       {
         text: "后端",
-        items: [
+        prefix: "/backend/",
+        children: [
           // {
           //   text: "Web",
           //   link: "/backend/web/",
           // },
           {
             text: "Java",
-            link: "/backend/java/",
+            link: "java/",
           },
           // {
           //   text: "大数据",
@@ -63,54 +70,57 @@ module.exports = {
           // },
           {
             text: "手写 Spring",
-            link: "/backend/spring/00.Intro.md",
+            link: "spring/00.Intro.md",
           },
           {
             text: "Redis",
-            link: "/backend/redis/"
+            link: "redis/"
           },
           {
             text: "RabbitMQ",
-            link: "/backend/rabbitmq/"
+            link: "rabbitmq/"
           }
         ],
       },
       {
         text: "大数据",
-        items: [
+        prefix: "/bigdata/",
+        children: [
           {
             text: "Spark",
-            link: "/bigdata/spark/00.Spark介绍.md"
+            link: "spark/00.Spark介绍.md"
           }
         ]
       },
       {
         text: "运维",
-        items: [
+        prefix: "/devops/",
+        children: [
           {
             text: "Docker",
-            link: "/devops/docker/",
+            link: "docker/",
           },
           {
             text: "Kubernates",
-            link: "/devops/kubernates/",
+            link: "kubernates/",
           },
           {
             text: "Linux",
-            link: "/devops/linux/"
+            link: "linux/"
           }
         ],
       },
       {
         text: "实战项目",
-        items: [
+        prefix: "/project/",
+        children: [
           {
             text: "布尔商城",
-            link: "/project/doublemall/",
+            link: "doublemall/",
           },
           {
             text: "二维码扫描登录原理",
-            link: "/project/qrcode-login/",
+            link: "qrcode-login/",
           },
         ],
       },
@@ -167,22 +177,30 @@ module.exports = {
       "/devops/linux/": genLinux(),
       "/project/doublemall/": getDoubleMall(),
       "/tools/": [""],
-    },
-    lastUpdated: "上次修改时间",
-  },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "@img": "/images",
-      },
-    },
-  },
-};
+    }
+  })
+})
+
+// module.exports = {
+//   head: [["link", { rel: "icon", href: "/logo.png" }]],
+//   themeConfig: {
+  
+    
+//     lastUpdated: "上次修改时间",
+//   },
+//   configureWebpack: {
+//     resolve: {
+//       alias: {
+//         "@img": "/images",
+//       },
+//     },
+//   },
+// };
 
 function genHtml() {
   return [
     {
-      title: "HTML",
+      text: "HTML",
       collapsable: true,
       children: ["Guide.md"],
     },
@@ -192,7 +210,7 @@ function genHtml() {
 function genCss() {
   return [
     {
-      title: "CSS",
+      text: "CSS",
       collapsable: true,
       children: ["Guide.md"],
     },
@@ -202,7 +220,7 @@ function genCss() {
 function genJavaScript() {
   return [
     {
-      title: "JavaScript",
+      text: "JavaScript",
       collapsable: true,
       children: ["Guide.md"],
     },
@@ -212,7 +230,7 @@ function genJavaScript() {
 function genTypeScript() {
   return [
     {
-      title: "TypeScript",
+      text: "TypeScript",
       collapsable: true,
       children: ["Guide.md"],
     },
@@ -222,7 +240,7 @@ function genTypeScript() {
 function genVue2() {
   return [
     {
-      title: "Vue",
+      text: "Vue",
       collapsable: true,
       sidebarDepth: 2,
       children: ["", "中文链接转拼音.md"],
@@ -233,7 +251,7 @@ function genVue2() {
 function genHighConcurrency() {
   return [
     {
-      title: "高并发系统认知",
+      text: "高并发系统认知",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -242,7 +260,7 @@ function genHighConcurrency() {
       ],
     },
     // {
-    //   title: "搭建生产级系统",
+    //   text: "搭建生产级系统",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -252,7 +270,7 @@ function genHighConcurrency() {
     //   ],
     // },
     // {
-    //   title: "专项突破",
+    //   text: "专项突破",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -266,7 +284,7 @@ function genHighConcurrency() {
     //   ],
     // },
     // {
-    //   title: "高并发项目设计与实战",
+    //   text: "高并发项目设计与实战",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -276,7 +294,7 @@ function genHighConcurrency() {
     //   ],
     // },
     // {
-    //   title: "运维监控",
+    //   text: "运维监控",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -290,7 +308,7 @@ function genHighConcurrency() {
 function genSpring() {
   return [
     {
-      title: "手写 Spring",
+      text: "手写 Spring",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -324,7 +342,7 @@ function genSpring() {
 function genRedis() {
   return [
     {
-      title: "Redis 基础",
+      text: "Redis 基础",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -339,7 +357,7 @@ function genRedis() {
 function genRabbitMQ() {
   return [
     {
-      title: "RabbitMQ 基础",
+      text: "RabbitMQ 基础",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -352,7 +370,7 @@ function genRabbitMQ() {
 function genSpark() {
   return [
     {
-      title: "Spark 介绍",
+      text: "Spark 介绍",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -360,7 +378,7 @@ function genSpark() {
       ]
     },
     {
-      title: "Spark Core",
+      text: "Spark Core",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -368,7 +386,7 @@ function genSpark() {
       ]
     },
     {
-      title: "Spark SQL",
+      text: "Spark SQL",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -376,7 +394,7 @@ function genSpark() {
       ]
     },
     {
-      title: "Spark Stream",
+      text: "Spark Stream",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -389,7 +407,7 @@ function genSpark() {
 function genDocker() {
   return [
     {
-      title: "Docker",
+      text: "Docker",
       collapsable: true,
       sidebarDepth: 2,
       children: ["00.Docker基本使用", "01.Docker网络", "02.阿里云镜像仓库"],
@@ -400,13 +418,13 @@ function genDocker() {
 function genKubernates() {
   return [
     {
-      title: "介绍",
+      text: "介绍",
       collapsable: false,
       sidebarDepth: 2,
       children: ["", "01.安装.md"]
     },
     // {
-    //   title: "容器技术概念入门",
+    //   text: "容器技术概念入门",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -418,7 +436,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S集群搭建与实践",
+    //   text: "K8S集群搭建与实践",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -428,7 +446,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "容器编排与K8S作业管理",
+    //   text: "容器编排与K8S作业管理",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -450,7 +468,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S持久化存储",
+    //   text: "K8S持久化存储",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -461,7 +479,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S容器网络",
+    //   text: "K8S容器网络",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -476,7 +494,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S作业调度与资源管理",
+    //   text: "K8S作业调度与资源管理",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -488,7 +506,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S容器运行时",
+    //   text: "K8S容器运行时",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -498,7 +516,7 @@ function genKubernates() {
     //   ],
     // },
     // {
-    //   title: "K8S容器监控与日志",
+    //   text: "K8S容器监控与日志",
     //   collapsable: false,
     //   sidebarDepth: 2,
     //   children: [
@@ -513,7 +531,7 @@ function genKubernates() {
 function genLinux() {
   return [
     {
-      title: "Centos",
+      text: "Centos",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -525,7 +543,7 @@ function genLinux() {
       ]
     },
     {
-      title: "OpenEuler",
+      text: "OpenEuler",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -539,13 +557,13 @@ function genLinux() {
 function genDesignPatterns() {
   return [
     {
-      title: "设计模式介绍",
+      text: "设计模式介绍",
       collapsable: false,
       sidebarDepth: 2,
       children: [""],
     },
     {
-      title: "创建型模式",
+      text: "创建型模式",
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -555,13 +573,13 @@ function genDesignPatterns() {
       ],
     },
     {
-      title: "结构型模式",
+      text: "结构型模式",
       collapsable: false,
       sidebarDepth: 2,
       children: [],
     },
     {
-      title: "行为模式",
+      text: "行为模式",
       collapsable: false,
       sidebarDepth: 2,
       children: ["s3-行为型模式/01.责任链模式.md"],
@@ -572,7 +590,7 @@ function genDesignPatterns() {
 function getProject() {
   return [
     {
-      title: "二维码扫描登录原理",
+      text: "二维码扫描登录原理",
       collapsable: false,
       sidebarDepth: 1,
       children: ["/project/01.二维码扫描登录原理.md"],
@@ -583,25 +601,25 @@ function getProject() {
 function getDoubleMall() {
   return [
     {
-      title: "前言",
+      text: "前言",
       collapsable: false,
       sidebarDepth: 2,
       children: ["01.intro/01.学习计划.md", "01.intro/02.项目架构.md"],
     },
     {
-      title: "技术总和",
+      text: "技术总和",
       collapsable: false,
       sidebarDepth: 1,
       children: ["02.tech/02.分布式技术.md"],
     },
     {
-      title: "开发准备",
+      text: "开发准备",
       collapsable: false,
       sidebarDepth: 1,
       children: ["02.tech/02.分布式技术.md"],
     },
     {
-      title: "分布式基础篇",
+      text: "分布式基础篇",
       collapsable: false,
       sidebarDepth: 1,
       children: [
@@ -610,7 +628,7 @@ function getDoubleMall() {
       ],
     },
     {
-      title: "分布式高级篇",
+      text: "分布式高级篇",
       collapsable: false,
       sidebarDepth: 1,
       children: ["02.tech/02.分布式技术.md"],
@@ -622,7 +640,7 @@ function genJava() {
   
   return [
     {
-      title: "Java 多线程",
+      text: "Java 多线程",
       collapsable: false,
       sidebarDepth: 1,
       children : genJavaJUC()
