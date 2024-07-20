@@ -2,7 +2,7 @@ services:
   - docker:20.10.6-dind
  
 # node:16-alpine3.11
-image: nikolaik/python-nodejs:python3.9-nodejs12-alpine
+image: bitnami/node:latest
  
 # 首先按顺序定义有几个步骤。步骤下面的所有job是同步执行的
 stages:
