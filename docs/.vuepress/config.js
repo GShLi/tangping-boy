@@ -5,7 +5,7 @@ import { defineUserConfig } from'vuepress'
 export default defineUserConfig({
   bundler: viteBundler(),
   lang: 'zh-CN',
-  text: '躺平男孩',
+  title: '躺平男孩',
   description: 'Just for TangPing!',
   theme: defaultTheme({
     navbar: [
