@@ -18,8 +18,7 @@ cache: &global_cache
 build:
   stage: build
   script:
-    - yarn install
-    - yarn docs:build
+    - yarn install && yarn docs:build
   tags:
     - k8s
  
