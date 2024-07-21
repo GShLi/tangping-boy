@@ -41,3 +41,5 @@ jscoverage_lib/
 bower_components/  
 dist/
 docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+.yarn
