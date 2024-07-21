@@ -7,7 +7,9 @@ features:
     details: 享受
   - title: 躺平至上
     details: 以躺平为中心
-footer: MIT Licensed | Copyright © 2024-present Double
+footer: "MIT Licensed | Copyright © 2024-present Double<br>
+<a href='https://beian.miit.gov.cn/' target='_blank'>苏 ICP 备 19055214 号-1</a>"
+footerHtml: true
 ---
 
 # TODO ✅ ❌
