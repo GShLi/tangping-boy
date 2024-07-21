@@ -19,7 +19,7 @@ build:
   stage: build
   script:
     - yarn install
-    - yarn run docs:build
+    - yarn docs:build
   tags:
     - k8s
  
