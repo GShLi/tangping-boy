@@ -5,15 +5,11 @@ modules:
   - Features
   - MdContent
   - Footer
-banner:
+bannerBrand:
   bgImage: '/bg.svg'
   title: Double's TangPing Zone.
-  description: Hi, Here! I'm Double.
-  heroImageStyle:
-    maxWidth: 200px
-    margin: 0 auto 2rem
-  bgImageStyle:
-    height: 450px
+  description: 
+  tagline: 👋 Hi, Here, I'm Double! I'm f back-end developer. I enjoy programming, hiking, photography and travel.
 features:
   - title: 回顾过去
     details: 回顾过去
