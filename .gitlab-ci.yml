@@ -20,6 +20,7 @@ build:
   script:
     - yarn install
     - ls -l
+    - ls -l node_modules
     - yarn docs:build
   tags:
     - k8s
