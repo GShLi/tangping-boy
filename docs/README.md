@@ -1,18 +1,34 @@
 ---
 home: true
-actionText: 开始内卷 →
-actionLink: /archive/
+modules:
+  - BannerBrand
+  - Features
+  - MdContent
+  - Footer
+banner:
+  bgImage: '/bg.svg'
+  title: Double's TangPing Zone.
+  description: Hi, Here! I'm Double.
+  heroImageStyle:
+    maxWidth: 200px
+    margin: 0 auto 2rem
+  bgImageStyle:
+    height: 450px
 features:
-  - title: 知识驱动
-    details: 享受
-  - title: 躺平至上
-    details: 以躺平为中心
-footer: "MIT Licensed | Copyright © 2024-present Double<br>
-<a href='https://beian.miit.gov.cn/' target='_blank'>苏 ICP 备 19055214 号-1</a>"
-footerHtml: true
+  - title: 回顾过去
+    details: 回顾过去
+  - title: 珍惜当下
+    details: 珍惜当下
+  - title: 展望未来
+    details: 展望未来
+footer: 
+  record: 苏 ICP 备 19055214 号-1
+  recordLink: https://beian.miit.gov.cn/
+  startYear: 2024
+
 ---
 
-# TODO ✅ ❌
+## TODO ✅ ❌
 
 * [❌] 根据思维导图整理 Redis 文章
 
@@ -61,7 +77,7 @@ footerHtml: true
 1. overlay 网络
 2. Flannel
 
-# 学习资料
+## 学习资料
 
 [Web 前端大师课](https://m.ke.qq.com/course/5892689?course_id=5892689&mmticket=#term_id=106109971&wxlogin=1)
 
