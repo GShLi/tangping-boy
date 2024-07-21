@@ -1,5 +1,5 @@
 import {viteBundler} from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
+import { recoTheme } from 'vuepress-theme-reco'
 import { defineUserConfig } from'vuepress'
 // import { searchConsolePlugin } from 'vuepress-plugin-china-search-console';
 
@@ -13,7 +13,7 @@ export default defineUserConfig({
       // baiduId: "cc5c9b6500314a97a313d944eb260fb5"
     // })
   ],
-  theme: defaultTheme({
+  theme: recoTheme({
     navbar: [
       // {
       //   text: "设计",
@@ -21,11 +21,10 @@ export default defineUserConfig({
       // },
       {
         text: "面向对象",
-        prefix: "/develop/",
         children: [
           {
             text: "设计模式",
-            link: "design-patterns/"
+            link: "/develop/design-patterns/"
           },
         ],
       },
@@ -56,7 +55,6 @@ export default defineUserConfig({
       // },
       {
         text: "后端",
-        prefix: "/backend/",
         children: [
           // {
           //   text: "Web",
@@ -64,7 +62,7 @@ export default defineUserConfig({
           // },
           {
             text: "Java",
-            link: "java/",
+            link: "/backend/java/",
           },
           // {
           //   text: "大数据",
@@ -76,57 +74,54 @@ export default defineUserConfig({
           // },
           {
             text: "手写 Spring",
-            link: "spring/00.Intro.md",
+            link: "/backend/spring/00.Intro.md",
           },
           {
             text: "Redis",
-            link: "redis/"
+            link: "/backend/redis/"
           },
           {
             text: "RabbitMQ",
-            link: "rabbitmq/"
+            link: "/backend/rabbitmq/"
           }
         ],
       },
       {
         text: "大数据",
-        prefix: "/bigdata/",
         children: [
           {
             text: "Spark",
-            link: "spark/00.Spark介绍.md"
+            link: "/bigdata/spark/00.Spark介绍.md"
           }
         ]
       },
       {
         text: "运维",
-        prefix: "/devops/",
         children: [
           {
             text: "Docker",
-            link: "docker/",
+            link: "/devops/docker/",
           },
           {
             text: "Kubernates",
-            link: "kubernates/",
+            link: "/devops/kubernates/",
           },
           {
             text: "Linux",
-            link: "linux/"
+            link: "/devops/linux/"
           }
         ],
       },
       {
         text: "实战项目",
-        prefix: "/project/",
         children: [
           {
             text: "布尔商城",
-            link: "doublemall/",
+            link: "/project/doublemall/",
           },
           {
             text: "二维码扫描登录原理",
-            link: "qrcode-login/",
+            link: "/project/qrcode-login/",
           },
         ],
       },
@@ -141,7 +136,7 @@ export default defineUserConfig({
       { text: "Gitee", link: "https://gitee.com/Double_Float/" },
       { text: "Github", link: "https://github.com/Double327/" },
     ],
-    sidebar: {
+    series: {
       "/ui/": [
         "",
         {
