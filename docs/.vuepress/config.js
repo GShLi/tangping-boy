@@ -1,7 +1,7 @@
 import {viteBundler} from '@vuepress/bundler-vite'
 import { recoTheme } from 'vuepress-theme-reco'
 import { defineUserConfig } from'vuepress'
-// import { searchConsolePlugin } from 'vuepress-plugin-china-search-console';
+import { searchConsolePlugin } from 'vuepress-plugin-china-search-console';
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -9,9 +9,9 @@ export default defineUserConfig({
   title: '躺平男孩',
   description: 'Just for TangPing!',
   plugins: [
-    // searchConsolePlugin({
-      // baiduId: "cc5c9b6500314a97a313d944eb260fb5"
-    // })
+    searchConsolePlugin({
+      baiduId: "cc5c9b6500314a97a313d944eb260fb5"
+    })
   ],
   theme: recoTheme({
     navbar: [

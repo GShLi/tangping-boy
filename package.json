@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.14",
-    "vuepress": "^2.0.0-rc.14"
+    "vuepress": "^2.0.0-rc.14",
+    "vuepress-plugin-china-search-console": "^2.1.5"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
