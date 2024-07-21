@@ -2,7 +2,6 @@ import { defineUserConfig } from 'vuepress'
 import { recoTheme } from 'vuepress-theme-reco'
 import { themeConfig } from './config/index'
 import {viteBundler} from '@vuepress/bundler-vite'
-import { searchConsolePlugin } from 'vuepress-plugin-china-search-console';
 
 export default defineUserConfig({
   locales: {
@@ -14,9 +13,9 @@ export default defineUserConfig({
   },
   bundler: viteBundler(),
   plugins: [
-    searchConsolePlugin({
-      baiduId: "cc5c9b6500314a97a313d944eb260fb5"
-    })
+    // searchConsolePlugin({
+    //   baiduId: "cc5c9b6500314a97a313d944eb260fb5"
+    // })
   ],
   theme: recoTheme(themeConfig),
 })
