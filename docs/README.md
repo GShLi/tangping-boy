@@ -60,6 +60,8 @@ footer:
 
 * [❌] Java Cyclic Barrier 循环栅栏是什么，什么用处？
 
+* [❌] 为什么 Redis 中字符串对象底层实现方式 SDS 和 EMBSTR 的界限是 39 字节？内存对其，深入了解一下。
+
 ## 问题
 
 1. Vue2 中 computed 能否在 v-if 里面使用
