@@ -18,9 +18,8 @@ cache: &global_cache
 build:
   stage: build
   script:
+    - npm config set registry https://npm.aliyun.com
     - yarn install
-    - ls -l
-    - ls -l node_modules
     - yarn docs:build
   tags:
     - k8s
