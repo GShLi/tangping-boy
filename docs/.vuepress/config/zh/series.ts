@@ -421,7 +421,9 @@ function genDesignPatterns() {
       text: "结构型模式",
       collapsable: false,
       sidebarDepth: 2,
-      children: [],
+      children: [
+        "s2-结构性模式/6.享元模式.md"
+      ],
     },
     {
       text: "行为模式",
@@ -499,5 +501,9 @@ function genJavaJUC() {
     "JUC/01.如何创建线程.md",
     "JUC/02.如何停止线程.md",
     "JUC/03.线程的状态转换.md",
+    "JUC/04.实现生产者消费者模式.md",
+    "JUC/05.并发编程Bug的源头.md",
+    "JUC/06.并发工具类.md",
+    "JUC/07.并发设计模式.md"
   ]
 }
