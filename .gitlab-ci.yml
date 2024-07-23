@@ -18,9 +18,8 @@ cache: &global_cache
 build:
   stage: build
   script:
+    - yarn config set registry https://registry.npmmirror.com/
     - yarn install
-    - ls -l
-    - ls -l node_modules
     - yarn docs:build
   tags:
     - k8s
