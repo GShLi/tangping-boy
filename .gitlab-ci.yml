@@ -18,7 +18,7 @@ cache: &global_cache
 build:
   stage: build
   script:
-    - yarn config set registry https://registry.npmmirror.com/
+    - npm set registry https://mran.npm.alibaba.com/
     - yarn install
     - yarn docs:build
   tags:
