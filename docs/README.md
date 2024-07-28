@@ -50,7 +50,7 @@ footer:
 
 * [❌] Rabbit MQ 的应用场景至少要知道 5 个
 
-* [❌] [Redis 中过期时间的实现方式是什么](/backend/redis/s1/04.Redis单机数据库的实现.md#键过期时间)
+* [✅] [Redis 中过期时间的实现方式是什么](/backend/redis/s1/04.Redis单机数据库的实现.md#键过期时间)
 
 * [❌] xcall 命令的作用和用法是什么？
 
