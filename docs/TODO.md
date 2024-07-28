@@ -1,6 +1,6 @@
 # TODO List
 
-## TODO ✅ ❌
+## TODO ❌
 
 * [❌] 根据思维导图整理 Redis 文章
 
@@ -32,7 +32,7 @@
 
 * [❌] 为什么 Redis 中字符串对象底层实现方式 SDS 和 EMBSTR 的界限是 39 字节？内存对其，深入了解一下。
 
-## DONE
+## DONE ✅
 
 * [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
 
