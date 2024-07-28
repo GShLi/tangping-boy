@@ -113,6 +113,10 @@ export const navbar = [
         text: "软件工具",
         link: "/tools/",
       },
+      {
+        text: "TODO",
+        link: "/TODO.md",
+      },
       // {
       //   text: "时光机",
       //   link: "/archive/",
