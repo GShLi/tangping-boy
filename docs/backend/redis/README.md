@@ -5,6 +5,7 @@
 1. 使用 Redis 和 CaffeineCache 的区别是什么？
 
     Caffeine 和 Redis 作为两种不同类型的缓存解决方案，它们之间存在一些明显的区别：
+
     缓存存储位置：
         Caffeine 是一个纯 Java 缓存库，缓存数据存储在 JVM 内存中。
         Redis 是一个独立的缓存服务器，缓存数据存储在独立的 Redis 服务器内存中。
