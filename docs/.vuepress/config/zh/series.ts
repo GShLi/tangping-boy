@@ -490,6 +490,12 @@ function genJava() {
   
   return [
     {
+      text: "Java 基础",
+      collapsable: false,
+      sidebarDepth: 1,
+      children : genJavaBasic()
+    },
+    {
       text: "Java 多线程",
       collapsable: false,
       sidebarDepth: 1,
@@ -498,15 +504,20 @@ function genJava() {
   ]
 }
 
+function genJavaBasic() {
+  return [
+    "01.java-basic/README.md",
+    "01.java-basic/01.Java基础-面向对象.md"
+  ]
+}
+
 function genJavaJUC() {
   return [
-    "JUC/00.总览.md",
-    "JUC/01.如何创建线程.md",
-    "JUC/02.如何停止线程.md",
-    "JUC/03.线程的状态转换.md",
-    "JUC/04.实现生产者消费者模式.md",
-    "JUC/05.并发编程Bug的源头.md",
-    "JUC/06.并发工具类.md",
-    "JUC/07.并发设计模式.md"
+    "03.java-juc/README.md",
+    "03.java-juc/01.JUC-线程的基础概念.md",
+    "03.java-juc/02.JUC-并发编程的三大特性.md",
+    "03.java-juc/03.JUC-锁.md",
+    "03.java-juc/04.JUC-阻塞队列.md",
+    "03.java-juc/Java多线程-QA.md"
   ]
 }
