@@ -2,7 +2,7 @@ import { genBasic } from './roadmap/00.basic.ts'
 import { genDesign } from './roadmap/01.design.ts'
 import { genArchitecture } from './roadmap/02.architecture.ts'
 import { genEnvironment } from './roadmap/03.environment.ts'
-import { genDevelopment } from './roadmap/04.development.ts'
+import { genDevelopment, genFramework } from './roadmap/04.development.ts'
 import { genTools } from './roadmap/05.tools.ts'
 import { genDebug } from './roadmap/06.debug.ts'
 import { genTesting } from './roadmap/07.testing.ts'
@@ -10,8 +10,7 @@ import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
 import { genDeployment } from './roadmap/09.deployment.ts'
 
 export const series = {
-  "/series/": genRoadMap(),
-  "/series/00.basic/": genBasic(),
+  "/series/04.development/01.framework/": genFramework()
 }
 
 function genRoadMap() {
