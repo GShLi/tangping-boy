@@ -2,7 +2,7 @@ import { genBasic } from './roadmap/00.basic.ts'
 import { genDesign } from './roadmap/01.design.ts'
 import { genArchitecture } from './roadmap/02.architecture.ts'
 import { genEnvironment } from './roadmap/03.environment.ts'
-import { genDevelopment, genFramework } from './roadmap/04.development.ts'
+import { genDevelopment, genFramework, genRelationDatabase, genDataSource, genShardingsphere, genDataSync, genMQ, genTaskSchedule, genSearchEngine, genOSS, genGraphStore, genNoSql, genBigData, genReisterCenter, genGateway, genRpc } from './roadmap/04.development.ts'
 import { genTools } from './roadmap/05.tools.ts'
 import { genDebug } from './roadmap/06.debug.ts'
 import { genTesting } from './roadmap/07.testing.ts'
@@ -10,7 +10,21 @@ import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
 import { genDeployment } from './roadmap/09.deployment.ts'
 
 export const series = {
-  "/series/04.development/01.framework/": genFramework()
+  "/series/04.development/01.framework/": genFramework(),
+  "/series/04.development/02.rdb/": genRelationDatabase(),
+  "/series/04.development/03.datasource/": genDataSource(),
+  "/series/04.development/04.shardingsphere/": genShardingsphere(),
+  "/series/04.development/05.data_sync/": genDataSync(),
+  "/series/04.development/06.mq/": genMQ(),
+  "/series/04.development/07.task_schedule/": genTaskSchedule(),
+  "/series/04.development/08.search_engine/": genSearchEngine(),
+  "/series/04.development/09.oss/": genOSS(),
+  "/series/04.development/10.graph_store/": genGraphStore(),
+  "/series/04.development/11.nosql/": genNoSql(),
+  "/series/04.development/12.bigdata/": genBigData(),
+  "/series/04.development/13.reister_center/": genReisterCenter(),
+  "/series/04.development/14.gateway/": genGateway(),
+  "/series/04.development/15.rpc/": genRpc(),
 }
 
 function genRoadMap() {

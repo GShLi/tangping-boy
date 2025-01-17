@@ -130,7 +130,7 @@ export function genSpring() {
   ]
 }
 
-function genRelationDatabase() {
+export function genRelationDatabase() {
   return [
     {
       text: "MySQL",
@@ -147,5 +147,110 @@ function genRelationDatabase() {
       collapsible: true,
       children: []
     },
+  ]
+}
+
+export function genDataSource() {
+  return [
+    {
+      text: "genDataSource",
+      children: []
+    }
+  ]
+}
+export function genShardingsphere() {
+  return [
+    {
+      text: "genShardingsphere",
+      children: []
+    }
+  ]
+}
+export function genDataSync() {
+  return [
+    {
+      text: "genDataSync",
+      children: []
+    }
+  ]
+}
+export function genMQ() {
+  return [
+    {
+      text: "genMQ",
+      children: []
+    }
+  ]
+}
+export function genTaskSchedule() {
+  return [
+    {
+      text: "genTaskSchedule",
+      children: []
+    }
+  ]
+}
+export function genSearchEngine() {
+  return [
+    {
+      text: "genSearchEngine",
+      children: []
+    }
+  ]
+}
+export function genOSS() {
+  return [
+    {
+      text: "genOSS",
+      children: []
+    }
+  ]
+}
+export function genGraphStore() {
+  return [
+    {
+      text: "genGraphStore",
+      children: []
+    }
+  ]
+}
+export function genNoSql() {
+  return [
+    {
+      text: "genNoSql",
+      children: []
+    }
+  ]
+}
+export function genBigData() {
+  return [
+    {
+      text: "genBigData",
+      children: []
+    }
+  ]
+}
+export function genReisterCenter() {
+  return [
+    {
+      text: "genReisterCenter",
+      children: []
+    }
+  ]
+}
+export function genGateway() {
+  return [
+    {
+      text: "genGateway",
+      children: []
+    }
+  ]
+}
+export function genRpc() {
+  return [
+    {
+      text: "genRpc",
+      children: []
+    }
   ]
 }
