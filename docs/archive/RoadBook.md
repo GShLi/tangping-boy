@@ -75,10 +75,28 @@
 2. Spring Boot
 3. MyBatis
 
-### RPC
+### 关系型数据库
 
-1. Dubbo
-2. GRPC
+1. MySQL
+2. Oracle
+3. PostgreSQL
+4. TiDB
+
+### 数据源
+
+1. DBCP
+2. C3P0
+3. Druid
+
+### 分库分表
+
+1. MyCat
+2. Sharing-JDBC
+
+### 数据同步
+
+1. Otter
+2. Canal
 
 ### MQ
 
@@ -92,38 +110,6 @@
 1. xxl-Job
 2. elastic-job
 3. quartz
-
-### 注册中心
-
-1. zookeeper
-2. eureka
-3. nacos
-4. consul
-
-### 数据源
-
-1. DBCP
-2. C3P0
-3. Druid
-
-### 分库分表
-
-1. MyCat
-2. Sharing-JDBC
-
-### 网关
-
-1. Spring Cloud Gateway
-2. Soul
-3. Zuul
-4. OpenResty
-
-### 关系型数据库
-
-1. MySQL
-2. Oracle
-3. PostgreSQL
-4. TiDB
 
 ### 搜索引擎
 
@@ -152,10 +138,24 @@
 3. Spark
 4. Hive
 
-### 数据同步
+### 注册中心
 
-1. Otter
-2. Canal
+1. zookeeper
+2. eureka
+3. nacos
+4. consul
+
+### 网关
+
+1. Spring Cloud Gateway
+2. Soul
+3. Zuul
+4. OpenResty
+
+### RPC
+
+1. Dubbo
+2. GRPC
 
 ## 类库
 
