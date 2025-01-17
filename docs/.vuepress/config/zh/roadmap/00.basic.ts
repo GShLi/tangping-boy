@@ -3,7 +3,7 @@ export function genBasic() {
     {
       text: "计算机基础",
       collapsible: true,
-      children: [],
+      children: [""],
     },
     {
       text: "编程基础",
