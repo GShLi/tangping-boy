@@ -1,47 +1,58 @@
+import { genBasic } from './roadmap/00.basic.ts'
+import { genDesign } from './roadmap/01.design.ts'
+import { genArchitecture } from './roadmap/02.architecture.ts'
+import { genEnvironment } from './roadmap/03.environment.ts'
+import { genDevelopment } from './roadmap/04.development.ts'
+import { genTools } from './roadmap/05.tools.ts'
+import { genDebug } from './roadmap/06.debug.ts'
+import { genTesting } from './roadmap/07.testing.ts'
+import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
+import { genDeployment } from './roadmap/09.deployment.ts'
+
 export const series = {
-      "/ui/": [
-        "",
-        {
-          title: "Sketch",
-          collapsable: true,
-          children: ["sketch/", "sketch/1"],
-        },
-      ],
-      "/frontend/html/": genHtml(),
-      "/frontend/css/": genCss(),
-      // "/frontend/javascript/": genJavaScript(),
-      // "/frontend/typescript/": genTypeScript(),
-      "/frontend/vue/": genVue2(),
-      "/develop/design-patterns/": genDesignPatterns(),
-      "/backend/web/": [
-        {
-          title: "Web",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: ["Guide.md"],
-        },
-      ],
-      "/backend/java/": genJava(),
-      "/backend/bigdata/": [
-        {
-          title: "大数据",
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [""],
-        },
-      ],
-      "/backend/high-concurrency/": genHighConcurrency(),
-      "/backend/spring/": genSpring(),
-      "/backend/redis/": genRedis(),
-      "/backend/rabbitmq/": genRabbitMQ(),
-      "/bigdata/spark/": genSpark(),
-      "/devops/docker/": genDocker(),
-      "/devops/kubernates/": genKubernates(),
-      "/devops/linux/": genLinux(),
-      "/project/doublemall/": getDoubleMall(),
-      "/tools/": [""],
-      "/roadbook/": genRoadMap(),
-    }
+  "/ui/": [
+    "",
+    {
+      title: "Sketch",
+      collapsable: true,
+      children: ["sketch/", "sketch/1"],
+    },
+  ],
+  "/frontend/html/": genHtml(),
+  "/frontend/css/": genCss(),
+  // "/frontend/javascript/": genJavaScript(),
+  // "/frontend/typescript/": genTypeScript(),
+  "/frontend/vue/": genVue2(),
+  "/develop/design-patterns/": genDesignPatterns(),
+  "/backend/web/": [
+    {
+      title: "Web",
+      collapsible: true,
+      sidebarDepth: 2,
+      children: ["Guide.md"],
+    },
+  ],
+  "/backend/java/": genJava(),
+  "/backend/bigdata/": [
+    {
+      title: "大数据",
+      collapsible: true,
+      sidebarDepth: 2,
+      children: [""],
+    },
+  ],
+  "/backend/high-concurrency/": genHighConcurrency(),
+  "/backend/spring/": genSpring(),
+  "/backend/redis/": genRedis(),
+  "/backend/rabbitmq/": genRabbitMQ(),
+  "/bigdata/spark/": genSpark(),
+  "/devops/docker/": genDocker(),
+  "/devops/kubernates/": genKubernates(),
+  "/devops/linux/": genLinux(),
+  "/project/doublemall/": getDoubleMall(),
+  "/tools/": [""],
+  "/roadbook/": genRoadMap(),
+}
 
 function genHtml() {
   return [
@@ -98,7 +109,7 @@ function genHighConcurrency() {
   return [
     {
       text: "高并发系统认知",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "s1/01.【高并发系统】什么是高并发系统？.md",
@@ -107,7 +118,7 @@ function genHighConcurrency() {
     },
     // {
     //   text: "搭建生产级系统",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s2/01.【高并发系统】生产级系统框架设计的细节.md",
@@ -117,7 +128,7 @@ function genHighConcurrency() {
     // },
     // {
     //   text: "专项突破",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s3/01.【高并发系统】应用集群化.md",
@@ -131,7 +142,7 @@ function genHighConcurrency() {
     // },
     // {
     //   text: "高并发项目设计与实战",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s4/01.【高并发系统】高并发系统设计原则.md",
@@ -141,7 +152,7 @@ function genHighConcurrency() {
     // },
     // {
     //   text: "运维监控",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s5/01.【高并发系统】运维之术——告别加班.md",
@@ -155,7 +166,7 @@ function genSpring() {
   return [
     {
       text: "手写 Spring",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "00.Intro.md",
@@ -189,7 +200,7 @@ function genRedis() {
   return [
     {
       text: "Redis 基础",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "s1/01.Redis命令执行流程.md",
@@ -207,7 +218,7 @@ function genRabbitMQ() {
   return [
     {
       text: "RabbitMQ 基础",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "s1/00.安装RabbitMQ.md"
@@ -220,7 +231,7 @@ function genSpark() {
   return [
     {
       text: "Spark 介绍",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "00.Spark介绍.md"
@@ -228,7 +239,7 @@ function genSpark() {
     },
     {
       text: "Spark Core",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "spark-core/00.SparkCore介绍.md"
@@ -236,7 +247,7 @@ function genSpark() {
     },
     {
       text: "Spark SQL",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "spark-sql/00.SparkSQL介绍.md"
@@ -244,7 +255,7 @@ function genSpark() {
     },
     {
       text: "Spark Stream",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "spark-stream/00.SparkStream介绍.md"
@@ -268,13 +279,13 @@ function genKubernates() {
   return [
     {
       text: "介绍",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: ["", "01.安装.md"]
     },
     // {
     //   text: "容器技术概念入门",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s1/01.进程.md",
@@ -286,7 +297,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S集群搭建与实践",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s2/01.Kubernetes一键部署利器-kubeadm.md",
@@ -296,7 +307,7 @@ function genKubernates() {
     // },
     // {
     //   text: "容器编排与K8S作业管理",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s3/01.为什么我们需要Pod.md",
@@ -318,7 +329,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S持久化存储",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s4/01.PV_PVC_StorageClass,这些到底在说啥.md",
@@ -329,7 +340,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S容器网络",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s5/01.浅谈容器网络.md",
@@ -344,7 +355,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S作业调度与资源管理",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s6/01.Kubernetes的资源模型与资源管理.md",
@@ -356,7 +367,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S容器运行时",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s7/01.幕后英雄_SIG-Node与CRI.md",
@@ -366,7 +377,7 @@ function genKubernates() {
     // },
     // {
     //   text: "K8S容器监控与日志",
-    //   collapsable: false,
+    //   collapsible: true,
     //   sidebarDepth: 2,
     //   children: [
     //     "s8/01.Prometheus_MetricsServer与Kubernetes监控体系.md",
@@ -381,7 +392,7 @@ function genLinux() {
   return [
     {
       text: "Centos",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "centos/01.Centos7搭建Gitlab环境.md",
@@ -393,7 +404,7 @@ function genLinux() {
     },
     {
       text: "OpenEuler",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "openeuler/配置yum源.md",
@@ -407,13 +418,13 @@ function genDesignPatterns() {
   return [
     {
       text: "设计模式介绍",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [""],
     },
     {
       text: "创建型模式",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "s1-创建型模式/01.工厂方法模式.md",
@@ -423,7 +434,7 @@ function genDesignPatterns() {
     },
     {
       text: "结构型模式",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: [
         "s2-结构性模式/6.享元模式.md"
@@ -431,7 +442,7 @@ function genDesignPatterns() {
     },
     {
       text: "行为模式",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: ["s3-行为型模式/01.责任链模式.md"],
     },
@@ -442,8 +453,7 @@ function getProject() {
   return [
     {
       text: "二维码扫描登录原理",
-      collapsable: false,
-      sidebarDepth: 1,
+      collapsible: true,
       children: ["/project/01.二维码扫描登录原理.md"],
     },
   ];
@@ -453,26 +463,23 @@ function getDoubleMall() {
   return [
     {
       text: "前言",
-      collapsable: false,
+      collapsible: true,
       sidebarDepth: 2,
       children: ["01.intro/01.学习计划.md", "01.intro/02.项目架构.md"],
     },
     {
       text: "技术总和",
-      collapsable: false,
-      sidebarDepth: 1,
+      collapsible: true,
       children: ["02.tech/02.分布式技术.md"],
     },
     {
       text: "开发准备",
-      collapsable: false,
-      sidebarDepth: 1,
+      collapsible: true,
       children: ["02.tech/02.分布式技术.md"],
     },
     {
       text: "分布式基础篇",
-      collapsable: false,
-      sidebarDepth: 1,
+      collapsible: true,
       children: [
         "04.basic/01.分类维护-树形结构构建方法.md",
         "04.basic/02.分类维护API-跨域问题的原理及处理方案.md",
@@ -480,27 +487,24 @@ function getDoubleMall() {
     },
     {
       text: "分布式高级篇",
-      collapsable: false,
-      sidebarDepth: 1,
+      collapsible: true,
       children: ["02.tech/02.分布式技术.md"],
     },
   ];
 }
 
 function genJava() {
-  
+
   return [
     {
       text: "Java 基础",
-      collapsable: false,
-      sidebarDepth: 1,
-      children : genJavaBasic()
+      collapsible: true,
+      children: genJavaBasic()
     },
     {
       text: "Java 多线程",
-      collapsable: false,
-      sidebarDepth: 1,
-      children : genJavaJUC()
+      collapsible: true,
+      children: genJavaJUC()
     }
   ]
 }
@@ -525,6 +529,55 @@ function genJavaJUC() {
 
 function genRoadMap() {
   return [
-    
+    {
+      text: "一、计算机基础",
+      collapsible: true,
+      children: genBasic()
+    },
+    {
+      text: "二、设计",
+      collapsible: true,
+      children: genDesign()
+    },
+    {
+      text: "三、架构",
+      collapsible: true,
+      children: genArchitecture()
+    },
+    {
+      text: "四、开发环境",
+      collapsible: true,
+      children: genEnvironment()
+    },
+    {
+      text: "五、开发技术",
+      collapsible: true,
+      children: genDevelopment()
+    },
+    {
+      text: "六、类库和工具",
+      collapsible: true,
+      children: genTools()
+    },
+    {
+      text: "七、调试",
+      collapsible: true,
+      children: genDebug()
+    },
+    {
+      text: "八、测试",
+      collapsible: true,
+      children: genTesting()
+    },
+    {
+      text: "九、质量分析",
+      collapsible: true,
+      children: genQualityAnalysis()
+    },
+    {
+      text: "十、发布和部署",
+      collapsible: true,
+      children: genDeployment()
+    }
   ]
 }
