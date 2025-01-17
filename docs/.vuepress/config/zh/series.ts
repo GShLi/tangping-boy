@@ -40,6 +40,7 @@ export const series = {
       "/devops/linux/": genLinux(),
       "/project/doublemall/": getDoubleMall(),
       "/tools/": [""],
+      "/roadbook/": genRoadMap(),
     }
 
 function genHtml() {
@@ -519,5 +520,11 @@ function genJavaJUC() {
     "03.java-juc/03.JUC-锁.md",
     "03.java-juc/04.JUC-阻塞队列.md",
     "03.java-juc/Java多线程-QA.md"
+  ]
+}
+
+function genRoadMap() {
+  return [
+    
   ]
 }
