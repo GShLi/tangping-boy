@@ -1,113 +1,89 @@
 export const navbar = [
-  // {
-  //   text: "设计",
-  //   link: "/ui/",
-  // },
   {
-    text: "面向对象",
+    text: "基础",
     children: [
       {
-        text: "设计模式",
-        link: "/develop/design-patterns/"
+        text: "计算机基础",
+        link: "/series/00.basic/01.basic-of-computer/",
+      },
+      {
+        text: "编程基础",
+        link: "/series/00.basic/02.basic-of-programming/",
+      },
+      {
+        text: "后端开发语言",
+        link: "/series/00.basic/03.backend-language/",
+      },
+      {
+        text: "前端开发语言",
+        link: "/series/00.basic/04.frontend-language/",
       },
     ],
   },
-  // {
-  //   text: "前端",
-  //   items: [
-  //     {
-  //       text: "HTML",
-  //       link: "/frontend/html/",
-  //     },
-  //     {
-  //       text: "CSS",
-  //       link: "/frontend/css/",
-  //     },
-  //     {
-  //       text: "JavaScript",
-  //       link: "/frontend/javascript/",
-  //     },
-  //     {
-  //       text: "TypeScript",
-  //       link: "/frontend/typescript/",
-  //     },
-  //     {
-  //       text: "Vue2",
-  //       link: "/frontend/vue/",
-  //     },
-  //   ],
-  // },
   {
-    text: "后端",
-    children: [
-      // {
-      //   text: "Web",
-      //   link: "/backend/web/",
-      // },
-      {
-        text: "Java",
-        link: "/backend/java/",
-      },
-      // {
-      //   text: "大数据",
-      //   link: "/backend/bigdata/",
-      // },
-      // {
-      //   text: "高并发系统",
-      //   link: "/backend/high-concurrency/s1/01.【高并发系统】什么是高并发系统？",
-      // },
-      {
-        text: "手写 Spring",
-        link: "/backend/spring/00.Intro.md",
-      },
-      {
-        text: "Redis",
-        link: "/backend/redis/"
-      },
-      {
-        text: "RabbitMQ",
-        link: "/backend/rabbitmq/"
-      }
-    ],
-  },
-  {
-    text: "大数据",
+    text: "开发技术",
     children: [
       {
-        text: "Spark",
-        link: "/bigdata/spark/00.Spark介绍.md"
-      }
+        text: "框架",
+        link: "/series/04.development/01.framework/"
+      },
+      {
+        text: "关系型数据库",
+        link: "/series/04.development/02.rdb/"
+      },
+      {
+        text: "数据源",
+        link: "/series/04.development/03.datasource/"
+      },
+      {
+        text: "分库分表",
+        link: "/series/04.development/04.shardingsphere/"
+      },
+      {
+        text: "数据同步",
+        link: "/series/04.development/05.data_sync/"
+      },
+      {
+        text: "消息队列",
+        link: "/series/04.development/06.mq/"
+      },
+      {
+        text: "任务调度",
+        link: "/series/04.development/07.task_schedule/"
+      },
+      {
+        text: "搜索引擎",
+        link: "/series/04.development/08.search_engine/"
+      },
+      {
+        text: "对象存储",
+        link: "/series/04.development/09.oss/"
+      },
+      {
+        text: "图形存储",
+        link: "/series/04.development/10.graph_store/"
+      },
+      {
+        text: "NoSQL",
+        link: "/series/04.development/11.nosql/"
+      },
+      {
+        text: "大数据",
+        link: "/series/04.development/12.bigdata/"
+      },
+      {
+        text: "注册中心",
+        link: "/series/04.development/13.reister_center/"
+      },
+      {
+        text: "网关",
+        link: "/series/04.development/14.gateway/"
+      },
+      {
+        text: "RPC",
+        link: "/series/04.development/15.rpc/"
+      },
     ]
-  },
-  {
-    text: "运维",
-    children: [
-      {
-        text: "Docker",
-        link: "/devops/docker/",
-      },
-      {
-        text: "Kubernates",
-        link: "/devops/kubernates/",
-      },
-      {
-        text: "Linux",
-        link: "/devops/linux/"
-      }
-    ],
-  },
-  {
-    text: "实战项目",
-    children: [
-      {
-        text: "布尔商城",
-        link: "/project/doublemall/",
-      },
-      {
-        text: "二维码扫描登录原理",
-        link: "/project/qrcode-login/",
-      },
-    ],
   },
   {
     text: "软件工具",
@@ -116,10 +92,6 @@ export const navbar = [
   {
     text: "TODO",
     link: "/TODO.md",
-  },
-  {
-    text: "编程路书",
-    link: "/roadbook/"
   },
   // {
   //   text: "时光机",
