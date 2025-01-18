@@ -4,11 +4,20 @@ export const navbar = [
     children: [
       {
         text: "计算机基础",
-        link: "/series/00.basic/01.basic-of-computer/",
+        link: "/series/00.basic/01.computer_basic/",
       },
       {
         text: "编程基础",
-        link: "/series/00.basic/02.basic-of-programming/",
+        children: [
+          {
+            text: "设计模式",
+            link: "/series/00.basic/02.programming_basic/01.design_pattern/"
+          },
+          {
+            text: "数据结构",
+            link: "/series/00.basic/02.programming_basic/02.data_structure/"
+          }
+        ],
       },
       {
         text: "后端开发语言",

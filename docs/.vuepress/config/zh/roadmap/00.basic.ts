@@ -31,6 +31,32 @@ export function genProgrammingBasic() {
   return []
 }
 
+export function genDesignPatterns() {
+  return [
+    {
+      text: "创建型模式",
+      collapsible: true,
+      children: [
+        "s1-创建型模式/01.工厂方法模式.md",
+        "s1-创建型模式/02.抽象工厂模式.md",
+        "s1-创建型模式/03.生成器模式.md",
+      ],
+    },
+    {
+      text: "结构型模式",
+      collapsible: true,
+      children: [
+        "s2-结构性模式/6.享元模式.md"
+      ],
+    },
+    {
+      text: "行为模式",
+      collapsible: true,
+      children: ["s3-行为型模式/01.责任链模式.md"],
+    },
+  ];
+}
+
 export function genBackendLanguage() {
   return [
     {

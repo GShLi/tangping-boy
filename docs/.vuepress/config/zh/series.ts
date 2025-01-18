@@ -2,6 +2,7 @@ import {
   genBasic,
   genComputerBasic,
   genProgrammingBasic,
+  genDesignPatterns,
   genBackendLanguage,
   genJava,
   genFrontendLanguage
@@ -20,6 +21,7 @@ export const series = {
   // 基础
   "/series/00.basic/01.computer_basic/": genComputerBasic(),
   "/series/00.basic/02.programming_basic/": genProgrammingBasic(),
+  "/series/00.basic/02.programming_basic/01.design_pattern/": genDesignPatterns(),
   "/series/00.basic/03.backend_language/": genBackendLanguage(),
   "/series/00.basic/03.backend_language/01.java/": genJava(),
   "/series/00.basic/04.frontend_language/": genFrontendLanguage(),
