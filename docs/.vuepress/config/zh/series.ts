@@ -1,6 +1,6 @@
 import { genBasic } from './roadmap/00.basic.ts'
 import { genDesign } from './roadmap/01.design.ts'
-import { genArchitecture } from './roadmap/02.architecture.ts'
+import { genArchitecture, genArchitecturePattern } from './roadmap/02.architecture.ts'
 import { genEnvironment } from './roadmap/03.environment.ts'
 import { genDevelopment, genFramework, genRelationDatabase, genDataSource, genShardingsphere, genDataSync, genMQ, genTaskSchedule, genSearchEngine, genOSS, genGraphStore, genNoSql, genBigData, genReisterCenter, genGateway, genRpc } from './roadmap/04.development.ts'
 import { genTools } from './roadmap/05.tools.ts'
@@ -10,6 +10,7 @@ import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
 import { genDeployment } from './roadmap/09.deployment.ts'
 
 export const series = {
+  "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
   "/series/04.development/01.framework/": genFramework(),
   "/series/04.development/02.rdb/": genRelationDatabase(),
   "/series/04.development/03.datasource/": genDataSource(),

@@ -11,6 +11,8 @@ export const themeConfig = {
         }
     },
     author: 'Double',
+    // 自动设置分类
+    autoSetBlogCategories: true,
     // algolia: {
     //     appId: 'WLXYU2FQNF',
     //     apiKey: '301023a99e29361f490178916504c25c',

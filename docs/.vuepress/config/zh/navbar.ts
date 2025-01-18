@@ -21,6 +21,23 @@ export const navbar = [
     ],
   },
   {
+    text: "架构",
+    children: [
+      {
+        text: "架构模式",
+        link: "/series/02.architecture/01.architecture_pattern/"
+      },
+      {
+        text: "架构分层",
+        link: "/series/02.architecture/02.architecture_hierachy/"
+      },
+      {
+        text: "设计与开发原则",
+        link: "/series/02.architecture/03.principle_of_design_and_development/"
+      },
+    ]
+  },
+  {
     text: "开发技术",
     children: [
       {
@@ -82,21 +99,21 @@ export const navbar = [
       {
         text: "RPC",
         link: "/series/04.development/15.rpc/"
-      },
+      }
     ]
   },
   {
-    text: "软件工具",
-    link: "/tools/",
+    text: "路书",
+    link: "/archive/RoadBook.md"
   },
   {
     text: "TODO",
     link: "/TODO.md",
   },
-  // {
-  //   text: "时光机",
-  //   link: "/archive/",
-  // },
+  {
+    text: "时光机",
+    link: "/timeline.html",
+  },
   { text: "Gitee", link: "https://gitee.com/Double_Float/" },
   { text: "Github", link: "https://github.com/Double327/" },
 ]
