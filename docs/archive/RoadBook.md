@@ -1,257 +1,328 @@
 # 编程路书
 
-## 基础
+## 一、基础
 
-### 计算机基础
+### 1. 计算机基础
 
-1. 计算机网络
-2. 操作系统
-3. 编译原理
+- [ ] 计算机网络
+- [ ] 操作系统
+- [ ] 编译原理
 
-### 编程基础
+### 2. 编程基础
 
-1. 数据结构
-2. 数学逻辑
-3. 设计模式
-4. 算法？
+- [ ] 数据结构
+- [ ] 数学逻辑
+- [ ] 设计模式
+- [ ] 算法？
 
-### 后端语言
+### 3. 后端语言
 
-1. Java
-2. C 语言
+- [ ] Java
+- [ ] C 语言
 
-### 前端语言
+### 4. 前端语言
 
-1. HTML
-2. CSS
-3. JavaScript
-4. Vue
-5. React
+- [ ] HTML
+- [ ] CSS
+- [ ] JavaScript
+- [ ] Vue
+- [ ] React
 
-## 设计
+## 二、设计
 
-### PPT
+### 1. PPT
 
-### draw.io
+### 2. draw.io
 
-### xmind
+### 3. xmind
 
-## 架构
+## 三、架构
 
-### 架构模式
+### 1. 架构模式
 
-1. 单体应用
-2. 微服务
-3. SOA
+- [ ] 单体应用
+- [ ] 微服务
+- [ ] SOA
 
-### 架构分层
+### 2. 架构分层
 
-1. MVC
-2. DDD
+- [ ] MVC
+- [ ] DDD
 
-### 设计和开发原则
+### 3. 设计和开发原则
 
-1. 领域驱动设计， Domain Driver Design DDD？
-2. 测试驱动设计， Test Driver Design TDD？
+- [ ] 领域驱动设计， Domain Driver Design DDD？
+- [ ] 测试驱动设计， Test Driver Design TDD？
 
-## 环境
+## 四、环境
 
-### 代码托管
+### 1. 代码托管
 
-### 版本控制
+- [ ] Github
+- [ ] Gitcode
+- [ ] Gitee
 
-### 开发工具
+### 2. 版本控制
 
-### 依赖管理
+- [ ] Git
+- [ ] SVN
 
-1. Maven
-2. Gradle
+### 3. 开发工具
 
-## 开发
+- [ ] IDEA
+- [ ] Navicat
 
-### 框架
+### 4. 依赖管理
 
-1. Spring
-2. Spring Boot
-3. MyBatis
+- [ ] Maven
+- [ ] Gradle
 
-### 关系型数据库
+## 五、开发
 
-1. MySQL
-2. Oracle
-3. PostgreSQL
-4. TiDB
+### 1. 框架
 
-### 数据源
+- [ ] Spring
+- [ ] Spring Boot
+- [ ] MyBatis
 
-1. DBCP
-2. C3P0
-3. Druid
+### 2. 关系型数据库
 
-### 分库分表
+- [ ] MySQL
+- [ ] Oracle
+- [ ] PostgreSQL
+- [ ] TiDB
 
-1. MyCat
-2. Sharing-JDBC
+### 3. 数据源
 
-### 数据同步
+- [ ] DBCP
+- [ ] C3P0
+- [ ] Druid
 
-1. Otter
-2. Canal
+### 4. 分库分表
 
-### MQ
+- [ ] MyCat
+- [ ] Sharing-JDBC
 
-1. Kafka
-2. RabbitMQ
-3. RocketMQ
-4. ActiveMQ
+### 5. 数据同步
 
-### 任务调度
+- [ ] Otter
+- [ ] Canal
 
-1. xxl-Job
-2. elastic-job
-3. quartz
+### 6. MQ
 
-### 搜索引擎
+- [ ] Kafka
+- [ ] RabbitMQ
+- [ ] RocketMQ
+- [ ] ActiveMQ
 
-1. ElasticSearch
-2. Solr
+### 7. 任务调度
 
-### 文件存储
+- [ ] xxl-Job
+- [ ] elastic-job
+- [ ] quartz
 
-1. HBase
-2. Hadoop
-3. MongoDB
+### 8. 搜索引擎
 
-### 图形数据库
+- [ ] ElasticSearch
+- [ ] Solr
 
-1. Neo4J
+### 9. 文件存储
 
-### NoSQL 数据库
+- [ ] HBase
+- [ ] Hadoop
+- [ ] MongoDB
 
-1. Redis
-2. Memcache
+### 10. 图形数据库
 
-### 大数据
+- [ ] Neo4J
 
-1. Flink
-2. Storm
-3. Spark
-4. Hive
+### 11. NoSQL 数据库
 
-### 注册中心
+- [ ] Redis
+- [ ] Memcache
 
-1. zookeeper
-2. eureka
-3. nacos
-4. consul
+### 12. 大数据
 
-### 网关
+- [ ] Flink
+- [ ] Storm
+- [ ] Spark
+- [ ] Hive
 
-1. Spring Cloud Gateway
-2. Soul
-3. Zuul
-4. OpenResty
+### 13. 注册中心
 
-### RPC
+- [ ] zookeeper
+- [ ] eureka
+- [ ] nacos
+- [ ] consul
 
-1. Dubbo
-2. GRPC
+### 14. 网关
 
-## 类库
+- [ ] Spring Cloud Gateway
+- [ ] Soul
+- [ ] Zuul
+- [ ] OpenResty
 
-### 序列化
+### 15. RPC
 
-1. fastjson
-2. jackson
-3. gson
+- [ ] Dubbo
+- [ ] GRPC
 
-### 认证授权
+## 六、类库
 
-1. shiro
-2. spring security
-3. jwt
-4. SSO
+### 1. 序列化
 
-### 字节码框架
+- [ ] fastjson
+- [ ] jackson
+- [ ] gson
 
-1. asm
-2. javassist
-3. Byte-Buddy
+### 2. 认证授权
 
-### 网络编程
+- [ ] shiro
+- [ ] spring security
+- [ ] jwt
+- [ ] SSO
 
-1. Netty
-2. Mina
-3. WebFlux
+### 3. 字节码框架
 
-### 工作流
+- [ ] asm
+- [ ] javassist
+- [ ] Byte-Buddy
 
-### 日志
+### 4. 网络编程
 
-### 服务治理
+- [ ] Netty
+- [ ] Mina
+- [ ] WebFlux
 
-### HTTP 框架
+### 5. 工作流
 
-### 规则引擎
+- [ ] BPMN
+- [ ] Activit7
 
-### Redis
+### 6. 日志
 
-### 其他
+- [ ] log4j
+- [ ] logback
+- [ ] slf4j
 
-## 调试工具
+### 7. 服务治理
 
-### Mock
+- [ ] Hystrix
+- [ ] Sentinel
+- [ ] RateLimiter
 
-mockito
+### 8. HTTP 框架
 
-### 调试工具
+- [ ] HttpClient
+- [ ] RestTemplate
 
-### API 管理
+### 9. 规则引擎
 
-## 测试
+- [ ] Drools
 
-### 单元测试
+### 10. Redis
 
-### 性能测试
+- [ ] Redisson
+- [ ] RedisTemplate
+- [ ] Jedis
 
-## 质量分析
+### 11. 其他
 
-### 代码审查
+- [ ] Guava
+- [ ] Hutool
+- [ ] TTL
 
-### 代码规范
+## 七、调试工具
 
-### 质量检测
+### 1. Mock
 
-### 监控系统
+- [ ] Mockito
 
-## 发布、部署
+### 2. 调试工具
 
-### CI/CD
+- [ ] Postman
+- [ ] ApiFox
+- [ ] ApiPost
+- [ ] Fast Request
 
-### 发布
+### 3. API 管理
 
-### 服务器
+- [ ] OpenApi
+- [ ] Swagger
+- [ ] Javadoc
+- [ ] Yapi
+- [ ] Torna
+- [ ] smart-doc
 
-Nginx
+## 八、测试
 
-Apache
+### 1. 单元测试
 
-Tomcat
+- [ ] JUnit
+- [ ] TestNG
 
-### 容器化
+### 2. 性能测试
 
-Docker
+- [ ] JMeter
 
-K8S
+## 九、质量分析
 
-### 服务化
+### 1. 代码审查
 
-PAAS
+- [ ] Github
 
-SAAS
+### 2. 代码规范
 
-IAAS
+- [ ] p3c
+- [ ] pmd-idea
 
-### 云原生
+### 3. 质量检测
 
+- [ ] SonarQube
+
+### 4. 监控系统
+
+- [ ] Prometheus
+- [ ] Pinpoint
+- [ ] SkyWalking
+- [ ] Dapper
+- [ ] BeeAPM
+
+## 十、发布、部署
+
+### 1. CI/CD
+
+- [ ] Jenkins
+- [ ] Ansible
+
+### 2. 发布
+
+- [ ] War
+- [ ] Jar
+
+### 3. 服务器
+
+- [ ] Nginx
+
+- [ ] Apache
+
+- [ ] Tomcat
+
+### 4. 容器化
+
+- [ ] Docker
+
+- [ ] K8S
+
+### 5. 服务化
+
+- [ ] PAAS
+
+- [ ] SAAS
+
+- [ ] IAAS
+
+### 6. 云原生
+
+- [ ] Istio
 
