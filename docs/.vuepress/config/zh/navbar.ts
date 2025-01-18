@@ -129,6 +129,10 @@ export const navbar = [
     ]
   },
   {
+    text: "文章",
+    link: "/posts.html"
+  },
+  {
     text: "路书",
     link: "/archive/RoadBook.md"
   },
