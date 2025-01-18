@@ -1,4 +1,11 @@
-import { genBasic } from './roadmap/00.basic.ts'
+import {
+  genBasic,
+  genComputerBasic,
+  genProgrammingBasic,
+  genBackendLanguage,
+  genJava,
+  genFrontendLanguage
+} from './roadmap/00.basic.ts'
 import { genDesign } from './roadmap/01.design.ts'
 import { genArchitecture, genArchitecturePattern } from './roadmap/02.architecture.ts'
 import { genEnvironment } from './roadmap/03.environment.ts'
@@ -10,7 +17,16 @@ import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
 import { genDeployment } from './roadmap/09.deployment.ts'
 
 export const series = {
+  // 基础
+  "/series/00.basic/01.computer_basic/": genComputerBasic(),
+  "/series/00.basic/02.programming_basic/": genProgrammingBasic(),
+  "/series/00.basic/03.backend_language/": genBackendLanguage(),
+  "/series/00.basic/03.backend_language/01.java/": genJava(),
+  "/series/00.basic/04.frontend_language/": genFrontendLanguage(),
+  // 设计
+  // 架构
   "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
+  // 开发技术
   "/series/04.development/01.framework/": genFramework(),
   "/series/04.development/02.rdb/": genRelationDatabase(),
   "/series/04.development/03.datasource/": genDataSource(),

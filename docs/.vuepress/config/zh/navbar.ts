@@ -12,11 +12,37 @@ export const navbar = [
       },
       {
         text: "后端开发语言",
-        link: "/series/00.basic/03.backend-language/",
+        children: [
+          {
+            text: "Java",
+            link: "/series/00.basic/03.backend_language/01.java/"
+          }
+        ]
       },
       {
         text: "前端开发语言",
-        link: "/series/00.basic/04.frontend-language/",
+        children: [
+          {
+            text: "HTML",
+            link: "/series/00.basic/04.frontend-language/01.html/"
+          },
+          {
+            text: "CSS",
+            link: "/series/00.basic/04.frontend-language/02.css/"
+          },
+          {
+            text: "JavaScript",
+            link: "/series/00.basic/04.frontend-language/03.javascript/"
+          },
+          {
+            text: "TypeScript",
+            link: "/series/00.basic/04.frontend-language/04.typescript/"
+          },
+          {
+            text: "Vue",
+            link: "/series/00.basic/04.frontend-language/05.vue/"
+          }
+        ]
       },
     ],
   },
