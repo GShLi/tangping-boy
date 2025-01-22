@@ -4,21 +4,73 @@ export const navbar = [
     children: [
       {
         text: "计算机基础",
-        link: "/series/00.basic/01.basic-of-computer/",
+        link: "/series/00.basic/01.computer_basic/",
       },
       {
         text: "编程基础",
-        link: "/series/00.basic/02.basic-of-programming/",
+        children: [
+          {
+            text: "设计模式",
+            link: "/series/00.basic/02.programming_basic/01.design_pattern/"
+          },
+          {
+            text: "数据结构",
+            link: "/series/00.basic/02.programming_basic/02.data_structure/"
+          }
+        ],
       },
       {
         text: "后端开发语言",
-        link: "/series/00.basic/03.backend-language/",
+        children: [
+          {
+            text: "Java",
+            link: "/series/00.basic/03.backend_language/01.java/"
+          }
+        ]
       },
       {
         text: "前端开发语言",
-        link: "/series/00.basic/04.frontend-language/",
+        children: [
+          {
+            text: "HTML",
+            link: "/series/00.basic/04.frontend-language/01.html/"
+          },
+          {
+            text: "CSS",
+            link: "/series/00.basic/04.frontend-language/02.css/"
+          },
+          {
+            text: "JavaScript",
+            link: "/series/00.basic/04.frontend-language/03.javascript/"
+          },
+          {
+            text: "TypeScript",
+            link: "/series/00.basic/04.frontend-language/04.typescript/"
+          },
+          {
+            text: "Vue",
+            link: "/series/00.basic/04.frontend-language/05.vue/"
+          }
+        ]
       },
     ],
+  },
+  {
+    text: "架构",
+    children: [
+      {
+        text: "架构模式",
+        link: "/series/02.architecture/01.architecture_pattern/"
+      },
+      {
+        text: "架构分层",
+        link: "/series/02.architecture/02.architecture_hierachy/"
+      },
+      {
+        text: "设计与开发原则",
+        link: "/series/02.architecture/03.principle_of_design_and_development/"
+      },
+    ]
   },
   {
     text: "开发技术",
@@ -82,21 +134,25 @@ export const navbar = [
       {
         text: "RPC",
         link: "/series/04.development/15.rpc/"
-      },
+      }
     ]
   },
   {
-    text: "软件工具",
-    link: "/tools/",
+    text: "文章",
+    link: "/posts.html"
+  },
+  {
+    text: "路书",
+    link: "/archive/RoadBook.md"
   },
   {
     text: "TODO",
     link: "/TODO.md",
   },
-  // {
-  //   text: "时光机",
-  //   link: "/archive/",
-  // },
+  {
+    text: "时光机",
+    link: "/timeline.html",
+  },
   { text: "Gitee", link: "https://gitee.com/Double_Float/" },
   { text: "Github", link: "https://github.com/Double327/" },
 ]
