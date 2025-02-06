@@ -7,7 +7,7 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Double's TangPing Zone.",
+      title: "Double's Zone.",
       description: 'Just for TangPing!',
     }
   },
