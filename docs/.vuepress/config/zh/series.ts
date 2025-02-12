@@ -19,31 +19,31 @@ import { genDeployment } from './roadmap/09.deployment.ts'
 
 export const series = {
   // 基础
-  "/series/00.basic/01.computer_basic/": genComputerBasic(),
+  // "/series/00.basic/01.computer_basic/": genComputerBasic(),
   "/series/00.basic/02.programming_basic/": genProgrammingBasic(),
   "/series/00.basic/02.programming_basic/01.design_pattern/": genDesignPatterns(),
   "/series/00.basic/03.backend_language/": genBackendLanguage(),
   "/series/00.basic/03.backend_language/01.java/": genJava(),
-  "/series/00.basic/04.frontend_language/": genFrontendLanguage(),
+  // "/series/00.basic/04.frontend_language/": genFrontendLanguage(),
   // 设计
   // 架构
-  "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
+  // "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
   // 开发技术
   "/series/04.development/01.framework/": genFramework(),
   "/series/04.development/02.rdb/": genRelationDatabase(),
   "/series/04.development/03.datasource/": genDataSource(),
-  "/series/04.development/04.shardingsphere/": genShardingsphere(),
-  "/series/04.development/05.data_sync/": genDataSync(),
+  // "/series/04.development/04.shardingsphere/": genShardingsphere(),
+  // "/series/04.development/05.data_sync/": genDataSync(),
   "/series/04.development/06.mq/": genMQ(),
-  "/series/04.development/07.task_schedule/": genTaskSchedule(),
-  "/series/04.development/08.search_engine/": genSearchEngine(),
-  "/series/04.development/09.oss/": genOSS(),
-  "/series/04.development/10.graph_store/": genGraphStore(),
+  // "/series/04.development/07.task_schedule/": genTaskSchedule(),
+  // "/series/04.development/08.search_engine/": genSearchEngine(),
+  // "/series/04.development/09.oss/": genOSS(),
+  // "/series/04.development/10.graph_store/": genGraphStore(),
   "/series/04.development/11.nosql/": genNoSql(),
   "/series/04.development/12.bigdata/": genBigData(),
-  "/series/04.development/13.reister_center/": genReisterCenter(),
-  "/series/04.development/14.gateway/": genGateway(),
-  "/series/04.development/15.rpc/": genRpc(),
+  // "/series/04.development/13.reister_center/": genReisterCenter(),
+  // "/series/04.development/14.gateway/": genGateway(),
+  // "/series/04.development/15.rpc/": genRpc(),
 }
 
 function genRoadMap() {
