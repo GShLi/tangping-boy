@@ -68,3 +68,5 @@
 [Web 前端大师课](https://m.ke.qq.com/course/5892689?course_id=5892689&mmticket=#term_id=106109971&wxlogin=1)
 
 [MDN Web Docs](https://developer.mozilla.org/zh-CN/)
+
+写一篇文章：<https://weilining.github.io/294.html#macOS-amp-Linux>
