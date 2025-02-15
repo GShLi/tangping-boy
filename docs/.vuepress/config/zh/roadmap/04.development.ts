@@ -130,6 +130,19 @@ export function genSpring() {
   ]
 }
 
+export function genMyBatis() {
+  return [
+    {
+      text: "MyBatis使用教程",
+      children: []
+    },
+    {
+      text: "MyBatis源码分析",
+      children: []
+    },
+  ]
+}
+
 export function genRelationDatabase() {
   return [
     {

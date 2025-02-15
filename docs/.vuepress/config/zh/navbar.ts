@@ -77,7 +77,17 @@ export const navbar = [
     children: [
       {
         text: "框架",
-        link: "/series/04.development/01.framework/"
+        link: "/series/04.development/01.framework/",
+        children: [
+          {
+            text: "Spring",
+            link: "/series/04.development/01.framework/01.spring/"
+          },
+          {
+            text: "MyBatis",
+            link: "/series/04.development/01.framework/04.mybatis/"
+          },
+        ]
       },
       {
         text: "关系型数据库",
