@@ -10,7 +10,25 @@ import {
 import { genDesign } from './roadmap/01.design.ts'
 import { genArchitecture, genArchitecturePattern } from './roadmap/02.architecture.ts'
 import { genEnvironment } from './roadmap/03.environment.ts'
-import { genDevelopment, genMyBatis, genRelationDatabase, genDataSource, genShardingsphere, genDataSync, genMQ, genTaskSchedule, genSearchEngine, genOSS, genGraphStore, genNoSql, genBigData, genReisterCenter, genGateway, genRpc } from './roadmap/04.development.ts'
+import {
+  genDevelopment,
+  genSpring,
+  genMyBatis,
+  genRelationDatabase,
+  genDataSource,
+  genShardingsphere,
+  genDataSync,
+  genMQ,
+  genTaskSchedule,
+  genSearchEngine,
+  genOSS,
+  genGraphStore,
+  genNoSql,
+  genBigData,
+  genReisterCenter,
+  genGateway,
+  genRpc
+} from './roadmap/04.development.ts'
 import { genTools } from './roadmap/05.tools.ts'
 import { genDebug } from './roadmap/06.debug.ts'
 import { genTesting } from './roadmap/07.testing.ts'
@@ -30,6 +48,7 @@ export const series = {
   // "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
   // 开发技术
   // 框架
+  "/series/04.development/01.framework/01.spring/": genSpring(),
   "/series/04.development/01.framework/04.mybatis/": genMyBatis(),
   "/series/04.development/02.rdb/": genRelationDatabase(),
   "/series/04.development/03.datasource/": genDataSource(),
