@@ -105,28 +105,37 @@ export function genFramework() {
 
 export function genSpring() {
   return [
-    "01.spring/00.Intro.md",
-    "01.spring/01.【手写Spring】实现一个简单的SpringBean容器.md",
-    "01.spring/02.【手写Spring】实现Bean对象的定义、注册和获取.md",
-    "01.spring/03.【手写Spring】基于Cglib实现含构造函数的类实例化策略.md",
-    "01.spring/04.【手写Spring】注入属性和依赖对象.md",
-    "01.spring/05.【手写Spring】资源加载器解析文件注册对象.md",
-    "01.spring/06.【手写Spring】实现应用上下文.md",
-    "01.spring/07.【手写Spring】Bean对象的初始化和销毁.md",
-    "01.spring/08.【手写Spring】感知容器对象.md",
-    "01.spring/09.【手写Spring】对象作用域和FactoryBean.md",
-    "01.spring/10.【手写Spring】容器事件和事件监听器.md",
-    "01.spring/11.【手写Spring】基于JDK、Cglib实现AOP切面.md",
-    "01.spring/12.【手写Spring】把AOP融入Bean的生命周期.md",
-    "01.spring/13.【手写Spring】自动扫描注册Bean对象.md",
-    "01.spring/14.【手写Spring】通过注解注入属性信息.md",
-    "01.spring/15.【手写Spring】给代理对象设置属性注入.md",
-    "01.spring/16.【手写Spring】通过三级缓存解决循环依赖.md",
-    "01.spring/17.【手写Spring】数据类型转换.md",
-    "01.spring/18.【手写Spring】JDBC功能整合.md",
-    "01.spring/19.【手写Spring】事务处理.md",
-    "01.spring/20.【手写Spring】ORM框架实现.md",
-    "01.spring/21.【手写Spring】将ORM框架整合到SpringBean容器中.md",
+    {
+      text: "Spring 教程",
+      children: []
+    },
+    {
+      text: "Spring 源码",
+      children: [
+        "02.code/00.Intro.md",
+        "02.code/01.【手写Spring】实现一个简单的SpringBean容器.md",
+        "02.code/02.【手写Spring】实现Bean对象的定义、注册和获取.md",
+        "02.code/03.【手写Spring】基于Cglib实现含构造函数的类实例化策略.md",
+        "02.code/04.【手写Spring】注入属性和依赖对象.md",
+        "02.code/05.【手写Spring】资源加载器解析文件注册对象.md",
+        "02.code/06.【手写Spring】实现应用上下文.md",
+        "02.code/07.【手写Spring】Bean对象的初始化和销毁.md",
+        "02.code/08.【手写Spring】感知容器对象.md",
+        "02.code/09.【手写Spring】对象作用域和FactoryBean.md",
+        "02.code/10.【手写Spring】容器事件和事件监听器.md",
+        "02.code/11.【手写Spring】基于JDK、Cglib实现AOP切面.md",
+        "02.code/12.【手写Spring】把AOP融入Bean的生命周期.md",
+        "02.code/13.【手写Spring】自动扫描注册Bean对象.md",
+        "02.code/14.【手写Spring】通过注解注入属性信息.md",
+        "02.code/15.【手写Spring】给代理对象设置属性注入.md",
+        "02.code/16.【手写Spring】通过三级缓存解决循环依赖.md",
+        "02.code/17.【手写Spring】数据类型转换.md",
+        "02.code/18.【手写Spring】JDBC功能整合.md",
+        "02.code/19.【手写Spring】事务处理.md",
+        "02.code/20.【手写Spring】ORM框架实现.md",
+        "02.code/21.【手写Spring】将ORM框架整合到SpringBean容器中.md",
+      ]
+    }
   ]
 }
 
@@ -134,7 +143,16 @@ export function genMyBatis() {
   return [
     {
       text: "MyBatis使用教程",
-      children: []
+      collapsible: false,
+      children: [
+        "01.course/01.MyBatis入门.md",
+        "01.course/02.XML配置.md",
+        "01.course/03.XML映射文件.md",
+        "01.course/04.动态SQL.md",
+        "01.course/05.Java API.md",
+        "01.course/06.SQL 语句构建器.md",
+        "01.course/07.日志.md"
+      ]
     },
     {
       text: "MyBatis源码分析",
