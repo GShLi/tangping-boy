@@ -22,6 +22,16 @@ build:
     - npm config set registry https://npm.aliyun.com
     - yarn install
     - yarn docs:build
+    - source .${CI_COMMIT_REF_NAME}.env
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - source .${CI_COMMIT_REF_NAME}.env
+    - ls docs/.vuepress/
+    - scp -r docs/.vuepress/dist/* root@$SERVER_IP:/www/wwwroot/docs.doublefloat.cn/
   tags:
     - k8s
  
