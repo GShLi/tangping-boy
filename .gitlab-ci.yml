@@ -1,8 +1,6 @@
 services:
   - docker:20.10.6-dind
  
-# node:16-alpine3.11
-image: bitnami/node:latest
  
 # 首先按顺序定义有几个步骤。步骤下面的所有job是同步执行的
 stages:
@@ -17,6 +15,8 @@ cache: &global_cache
  
 build:
   stage: build
+  # node:16-alpine3.11
+  image: bitnami/node:latest
   before_script:
     - echo "192.168.0.111   git.doublefloat.cn" >>/etc/hosts
   script:
