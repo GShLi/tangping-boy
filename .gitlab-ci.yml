@@ -20,7 +20,6 @@ build:
   script:
     - echo "192.168.0.111   git.doublefloat.cn" >>/etc/hosts
     - npm config set registry https://npm.aliyun.com
-    - node -v
     - yarn install
     - yarn docs:build
   tags:
