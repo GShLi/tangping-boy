@@ -19,10 +19,6 @@ build:
   image: bitnami/node:latest
   before_script:
     - echo "192.168.0.111   git.doublefloat.cn" >>/etc/hosts
-  script:
-    - npm config set registry https://npm.aliyun.com
-    - yarn install
-    - yarn docs:build
     - source .${CI_COMMIT_REF_NAME}.env
     - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
@@ -31,6 +27,10 @@ build:
     - chmod 700 ~/.ssh
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - source .${CI_COMMIT_REF_NAME}.env
+  script:
+    - npm config set registry https://npm.aliyun.com
+    - yarn install
+    - yarn docs:build
     - ls docs/.vuepress/
     - scp -r docs/.vuepress/dist/* root@$SERVER_IP:/www/wwwroot/docs.doublefloat.cn/
   tags:
