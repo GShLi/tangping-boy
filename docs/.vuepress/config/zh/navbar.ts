@@ -148,6 +148,20 @@ export const navbar = [
     ]
   },
   {
+    text: "部署",
+    children: [
+      {
+        text: "容器化",
+        children: [
+          {
+            text: "K8S",
+            link: "/series/09.deploy/04.containerization/02.k8s/"
+          }
+        ]
+      }
+    ]
+  },
+  {
     text: "文章",
     link: "/posts.html"
   },

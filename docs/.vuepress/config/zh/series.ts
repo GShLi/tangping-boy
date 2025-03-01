@@ -33,7 +33,7 @@ import { genTools } from './roadmap/05.tools.ts'
 import { genDebug } from './roadmap/06.debug.ts'
 import { genTesting } from './roadmap/07.testing.ts'
 import { genQualityAnalysis } from './roadmap/08.quality_analysis.ts'
-import { genDeployment } from './roadmap/09.deployment.ts'
+import { genDeployment, genK8S } from './roadmap/09.deployment.ts'
 
 export const series = {
   // 基础
@@ -64,6 +64,7 @@ export const series = {
   // "/series/04.development/13.reister_center/": genReisterCenter(),
   // "/series/04.development/14.gateway/": genGateway(),
   // "/series/04.development/15.rpc/": genRpc(),
+  "/series/09.deploy/04.containerization/02.k8s/": genK8S()
 }
 
 function genRoadMap() {
