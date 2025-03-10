@@ -114,7 +114,12 @@ export function genJava() {
     {
       text: "Java 虚拟机(JVM)",
       children: [
-        "07.java-jvm/README.md"
+        "07.java-jvm/README.md",
+        "07.java-jvm/01.类加载器.md",
+        "07.java-jvm/02.运行时数据区域.md",
+        "07.java-jvm/03.执行引擎.md",
+        "07.java-jvm/04.本地库接口.md",
+        "07.java-jvm/05.本地方法库.md"
       ]
     }
   ]
