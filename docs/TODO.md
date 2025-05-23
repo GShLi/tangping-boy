@@ -41,6 +41,8 @@
   * 常用的引擎及其文件存储方式
   * 索引？
 
+* [❌] [获取 Request 的几种方式](https://www.cnblogs.com/zwh0910/p/17168833.html)
+
 ## DONE ✅
 
 * [✅] [使用 Redis 做缓存和使用 Caffeine 的区别是什么？](/backend/redis/)
