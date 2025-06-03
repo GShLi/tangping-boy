@@ -2,7 +2,6 @@ import { defineUserConfig } from "vuepress";
 import { recoTheme } from "vuepress-theme-reco";
 import { themeConfig } from "./config/index";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   parser: "@typescript-eslint/parser",
