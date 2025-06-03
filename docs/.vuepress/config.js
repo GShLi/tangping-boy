@@ -18,10 +18,6 @@ export default defineUserConfig({
     // searchConsolePlugin({
     //   baiduId: "cc5c9b6500314a97a313d944eb260fb5"
     // })
-    mdEnhancePlugin({
-      // 配置 md 扩展插件会报错
-      // mermaid: true,
-    }),
   ],
   theme: recoTheme(themeConfig),
   head: [
