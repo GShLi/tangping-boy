@@ -11,7 +11,7 @@ export const navbar = [
         children: [
           {
             text: "设计模式",
-            link: "/series/00.basic/02.programming_basic/01.design_pattern/"
+            link: "/series/00.basic/02.programming_basic/01.design_pattern/",
           },
           // {
           //   text: "数据结构",
@@ -24,9 +24,9 @@ export const navbar = [
         children: [
           {
             text: "Java",
-            link: "/series/00.basic/03.backend_language/01.java/"
-          }
-        ]
+            link: "/series/00.basic/03.backend_language/01.java/",
+          },
+        ],
       },
       // {
       //   text: "前端开发语言",
@@ -81,21 +81,21 @@ export const navbar = [
         children: [
           {
             text: "Spring",
-            link: "/series/04.development/01.framework/01.spring/"
+            link: "/series/04.development/01.framework/01.spring/",
           },
           {
             text: "MyBatis",
-            link: "/series/04.development/01.framework/04.mybatis/"
+            link: "/series/04.development/01.framework/04.mybatis/",
           },
-        ]
+        ],
       },
       {
         text: "关系型数据库",
-        link: "/series/04.development/02.rdb/"
+        link: "/series/04.development/02.rdb/",
       },
       {
         text: "数据源",
-        link: "/series/04.development/03.datasource/"
+        link: "/series/04.development/03.datasource/",
       },
       // {
       //   text: "分库分表",
@@ -107,7 +107,7 @@ export const navbar = [
       // },
       {
         text: "消息队列",
-        link: "/series/04.development/06.mq/"
+        link: "/series/04.development/06.mq/",
       },
       // {
       //   text: "任务调度",
@@ -127,7 +127,7 @@ export const navbar = [
       // },
       {
         text: "NoSQL",
-        link: "/series/04.development/11.nosql/"
+        link: "/series/04.development/11.nosql/",
       },
       // {
       //   text: "大数据",
@@ -145,15 +145,15 @@ export const navbar = [
       //   text: "RPC",
       //   link: "/series/04.development/15.rpc/"
       // }
-    ]
+    ],
   },
   {
     text: "文章",
-    link: "/posts.html"
+    link: "/posts.html",
   },
   {
     text: "路书",
-    link: "/archive/RoadBook.md"
+    link: "/archive/RoadBook.md",
   },
   // {
   //   text: "TODO",
@@ -161,4 +161,4 @@ export const navbar = [
   // },
   // { text: "Gitee", link: "https://gitee.com/Double_Float/" },
   { text: "Github", link: "https://github.com/Double327/" },
-]
+];

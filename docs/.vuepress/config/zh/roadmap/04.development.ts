@@ -156,7 +156,12 @@ export function genMyBatis() {
     },
     {
       text: "MyBatis源码分析",
-      children: []
+      children: [
+        "02.code/01.core_architecture_initialization/README.md",
+        "02.code/02.sql_execution_engine/README.md",
+        "02.code/03.extensibility_mechanisms/README.md",
+        "02.code/04.advanced_optimization_techniques/README.md",
+      ]
     },
   ]
 }
