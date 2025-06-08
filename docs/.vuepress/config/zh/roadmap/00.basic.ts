@@ -24,11 +24,11 @@ export function genBasic() {
 }
 
 export function genComputerBasic() {
-  return []
+  return [];
 }
 
 export function genProgrammingBasic() {
-  return []
+  return [];
 }
 
 export function genDesignPatterns() {
@@ -45,9 +45,7 @@ export function genDesignPatterns() {
     {
       text: "结构型模式",
       collapsible: true,
-      children: [
-        "s2-结构性模式/6.享元模式.md"
-      ],
+      children: ["s2-结构性模式/6.享元模式.md"],
     },
     {
       text: "行为模式",
@@ -61,26 +59,20 @@ export function genBackendLanguage() {
   return [
     {
       text: "Java",
-      children: [
-
-      ]
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 
 export function genJava() {
   return [
     {
       text: "Java 基础",
-      children: [
-        "01.java-basic/01.Java基础-面向对象.md"
-      ]
+      children: ["01.java-basic/01.Java基础-面向对象.md"],
     },
     {
       text: "Java 集合",
-      children: [
-        "02.java-collection/README.md"
-      ]
+      children: ["02.java-collection/README.md"],
     },
     {
       text: "Java 多线程",
@@ -90,26 +82,25 @@ export function genJava() {
         "03.java-juc/02.JUC-并发编程的三大特性.md",
         "03.java-juc/03.JUC-锁.md",
         "03.java-juc/04.JUC-阻塞队列.md",
-        "03.java-juc/Java多线程-QA.md"
-      ]
+        "03.java-juc/Java多线程-QA.md",
+      ],
     },
     {
       text: "Java IO",
       children: [
-        "04.java-io/README.md"
-      ]
+        "04.java-io/01.IO基础知识总结.md",
+        "04.java-io/02.IO设计模式总结.md",
+        "04.java-io/03.IO模型总结.md",
+        "04.java-io/04.NIO核心知识总结.md",
+      ],
     },
     {
       text: "Java 8",
-      children: [
-        "05.java8/README.md"
-      ]
+      children: ["05.java8/README.md"],
     },
     {
       text: "Java 8+",
-      children: [
-        "06.java8+/README.md"
-      ]
+      children: ["06.java8+/README.md"],
     },
     {
       text: "Java 虚拟机(JVM)",
@@ -119,12 +110,12 @@ export function genJava() {
         "07.java-jvm/02.运行时数据区域.md",
         "07.java-jvm/03.执行引擎.md",
         "07.java-jvm/04.本地库接口.md",
-        "07.java-jvm/05.本地方法库.md"
-      ]
-    }
-  ]
+        "07.java-jvm/05.本地方法库.md",
+      ],
+    },
+  ];
 }
 
 export function genFrontendLanguage() {
-  return []
+  return [];
 }
