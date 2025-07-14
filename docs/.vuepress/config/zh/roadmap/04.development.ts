@@ -3,79 +3,83 @@ export function genDevelopment() {
     {
       text: "技术框架",
       collapsible: true,
-      children: genFramework()
+      children: genFramework(),
     },
     {
       text: "关系型数据库",
       collapsible: true,
-      children: genRelationDatabase()
+      children: genRelationDatabase(),
     },
     {
       text: "数据源",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "分库分表",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "数据同步",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "消息队列",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "任务调度",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "搜索引擎",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "对象存储",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "图形存储",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "NoSQL",
       collapsible: true,
-      children: []
+      children: [
+        {
+          text: "Redis",
+        },
+      ],
     },
     {
       text: "大数据",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "注册中心",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "网关",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "RPC",
       collapsible: true,
-      children: []
+      children: [],
     },
-  ]
+  ];
 }
 
 export function genFramework() {
@@ -83,31 +87,31 @@ export function genFramework() {
     {
       text: "Spring",
       collapsible: true,
-      children: genSpring()
+      children: genSpring(),
     },
     {
       text: "Spring MVC",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "Spring Boot",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "MyBatis",
       collapsible: true,
-      children: []
+      children: [],
     },
-  ]
+  ];
 }
 
 export function genSpring() {
   return [
     {
       text: "Spring 教程",
-      children: []
+      children: [],
     },
     {
       text: "Spring 源码",
@@ -134,9 +138,9 @@ export function genSpring() {
         "02.code/19.【手写Spring】事务处理.md",
         "02.code/20.【手写Spring】ORM框架实现.md",
         "02.code/21.【手写Spring】将ORM框架整合到SpringBean容器中.md",
-      ]
-    }
-  ]
+      ],
+    },
+  ];
 }
 
 export function genMyBatis() {
@@ -151,14 +155,14 @@ export function genMyBatis() {
         "01.course/04.动态SQL.md",
         "01.course/05.Java API.md",
         "01.course/06.SQL 语句构建器.md",
-        "01.course/07.日志.md"
-      ]
+        "01.course/07.日志.md",
+      ],
     },
     {
       text: "MyBatis源码分析",
-      children: []
+      children: [],
     },
-  ]
+  ];
 }
 
 export function genRelationDatabase() {
@@ -166,122 +170,131 @@ export function genRelationDatabase() {
     {
       text: "MySQL",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "PostgreSQL",
       collapsible: true,
-      children: []
+      children: [],
     },
     {
       text: "Oracle",
       collapsible: true,
-      children: []
+      children: [],
     },
-  ]
+  ];
 }
 
 export function genDataSource() {
   return [
     {
       text: "genDataSource",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genShardingsphere() {
   return [
     {
       text: "genShardingsphere",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genDataSync() {
   return [
     {
       text: "genDataSync",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genMQ() {
   return [
     {
       text: "genMQ",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genTaskSchedule() {
   return [
     {
       text: "genTaskSchedule",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genSearchEngine() {
   return [
     {
       text: "genSearchEngine",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genOSS() {
   return [
     {
       text: "genOSS",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genGraphStore() {
   return [
     {
       text: "genGraphStore",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
-export function genNoSql() {
+
+export function genRedis() {
   return [
     {
-      text: "genNoSql",
-      children: []
-    }
-  ]
+      text: "Redis基础",
+      children: [
+        "s1/01.Redis命令执行流程.md",
+        "s1/02.Redis基础架构-数据模型和操作接口.md",
+        "s1/03.Redis中使用的数据结构.md",
+        "s1/04.Redis单机数据库的实现.md",
+        "s1/05.Redis多机数据库(集群)的实现.md",
+        "s1/06.Redis其他模块.md",
+      ],
+    },
+  ];
 }
+
 export function genBigData() {
   return [
     {
       text: "genBigData",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genReisterCenter() {
   return [
     {
       text: "genReisterCenter",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genGateway() {
   return [
     {
       text: "genGateway",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
 export function genRpc() {
   return [
     {
       text: "genRpc",
-      children: []
-    }
-  ]
+      children: [],
+    },
+  ];
 }
