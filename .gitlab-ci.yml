@@ -1,8 +1,6 @@
 services:
   - docker:20.10.6-dind
  
-# node:16-alpine3.11
-image: bitnami/node:latest
  
 # 首先按顺序定义有几个步骤。步骤下面的所有job是同步执行的
 stages:
@@ -17,19 +15,22 @@ cache: &global_cache
  
 build:
   stage: build
-  script:
+  # node:16-alpine3.11
+  image: bitnami/node:latest
+  before_script:
     - echo "192.168.0.111   git.doublefloat.cn" >>/etc/hosts
-    - npm config set registry https://npm.aliyun.com
-    - yarn install
-    - yarn docs:build
     - source .${CI_COMMIT_REF_NAME}.env
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - source .${CI_COMMIT_REF_NAME}.env
+  script:
+    - npm config set registry https://npm.aliyun.com
+    - yarn install
+    - yarn docs:build
     - ls docs/.vuepress/
     - scp -r docs/.vuepress/dist/* root@$SERVER_IP:/www/wwwroot/docs.doublefloat.cn/
   tags:
