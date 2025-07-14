@@ -26,7 +26,7 @@ import {
   genSearchEngine,
   genOSS,
   genGraphStore,
-  genNoSql,
+  genRedis,
   genBigData,
   genReisterCenter,
   genGateway,
@@ -36,7 +36,7 @@ import { genTools } from "./roadmap/05.tools.ts";
 import { genDebug } from "./roadmap/06.debug.ts";
 import { genTesting } from "./roadmap/07.testing.ts";
 import { genQualityAnalysis } from "./roadmap/08.quality_analysis.ts";
-import { genDeployment } from "./roadmap/09.deployment.ts";
+import { genDeployment, genK8S } from "./roadmap/09.deployment.ts";
 
 export const series = {
   // 基础
@@ -53,7 +53,6 @@ export const series = {
   // 开发技术
   // 框架
   "/series/04.development/01.framework/01.spring/": genSpring(),
-  // MyBatis
   "/series/04.development/01.framework/04.mybatis/": genMyBatis(),
   "/series/04.development/02.rdb/": genRelationDatabase(),
   "/series/04.development/03.datasource/": genDataSource(),
@@ -64,11 +63,13 @@ export const series = {
   // "/series/04.development/08.search_engine/": genSearchEngine(),
   // "/series/04.development/09.oss/": genOSS(),
   // "/series/04.development/10.graph_store/": genGraphStore(),
-  "/series/04.development/11.nosql/": genNoSql(),
+  // No SQL
+  "/series/04.development/11.nosql/01.redis/": genRedis(),
   "/series/04.development/12.bigdata/": genBigData(),
   // "/series/04.development/13.reister_center/": genReisterCenter(),
   // "/series/04.development/14.gateway/": genGateway(),
   // "/series/04.development/15.rpc/": genRpc(),
+  "/series/09.deploy/04.containerization/02.k8s/": genK8S(),
 };
 
 function genRoadMap() {
