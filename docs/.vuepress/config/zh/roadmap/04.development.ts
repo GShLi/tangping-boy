@@ -53,7 +53,11 @@ export function genDevelopment() {
     {
       text: "NoSQL",
       collapsible: true,
-      children: [],
+      children: [
+        {
+          text: "Redis",
+        },
+      ],
     },
     {
       text: "大数据",
@@ -253,14 +257,23 @@ export function genGraphStore() {
     },
   ];
 }
-export function genNoSql() {
+
+export function genRedis() {
   return [
     {
-      text: "genNoSql",
-      children: [],
+      text: "Redis基础",
+      children: [
+        "s1/01.Redis命令执行流程.md",
+        "s1/02.Redis基础架构-数据模型和操作接口.md",
+        "s1/03.Redis中使用的数据结构.md",
+        "s1/04.Redis单机数据库的实现.md",
+        "s1/05.Redis多机数据库(集群)的实现.md",
+        "s1/06.Redis其他模块.md",
+      ],
     },
   ];
 }
+
 export function genBigData() {
   return [
     {

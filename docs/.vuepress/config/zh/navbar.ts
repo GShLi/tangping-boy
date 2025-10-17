@@ -127,7 +127,12 @@ export const navbar = [
       // },
       {
         text: "NoSQL",
-        link: "/series/04.development/11.nosql/",
+        children: [
+          {
+            text: "Redis",
+            link: "/series/04.development/11.nosql/01.redis/",
+          },
+        ],
       },
       // {
       //   text: "大数据",
@@ -148,6 +153,20 @@ export const navbar = [
     ],
   },
   {
+    text: "部署",
+    children: [
+      {
+        text: "容器化",
+        children: [
+          {
+            text: "K8S",
+            link: "/series/09.deploy/04.containerization/02.k8s/",
+          },
+        ],
+      },
+    ],
+  },
+  {
     text: "文章",
     link: "/posts.html",
   },
@@ -160,5 +179,5 @@ export const navbar = [
   //   link: "/TODO.md",
   // },
   // { text: "Gitee", link: "https://gitee.com/Double_Float/" },
-  { text: "Github", link: "https://github.com/Double327/" },
+  { text: "Github", link: "https://github.com/GShLi/" },
 ];
