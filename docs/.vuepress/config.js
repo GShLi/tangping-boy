@@ -4,6 +4,7 @@ import { themeConfig } from "./config/index";
 import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
+  base: "/tangping-boy/",
   parser: "@typescript-eslint/parser",
   locales: {
     "/": {
@@ -27,7 +28,7 @@ export default defineUserConfig({
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?cc5c9b6500314a97a313d944eb260fb5";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();`,
     ],
