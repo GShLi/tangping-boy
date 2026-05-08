@@ -4,7 +4,6 @@ function genJavaLanguage() {
   return [
     {
       text: "并发 (JUC)",
-      collapsible: true,
       children: [
         "juc/README.md",
         "juc/JUC-线程的基础概念.md",
@@ -21,7 +20,6 @@ function genJavaLanguage() {
     },
     {
       text: "IO",
-      collapsible: true,
       children: [
         "io/README.md",
         "io/IO基础知识总结.md",
@@ -29,7 +27,6 @@ function genJavaLanguage() {
     },
     {
       text: "JVM",
-      collapsible: true,
       children: [
         "jvm/README.md",
         "jvm/类加载器.md",
@@ -56,7 +53,6 @@ function genMyBatis() {
   return [
     {
       text: "MyBatis 使用教程",
-      collapsible: false,
       children: [
         "01.course/MyBatis入门.md",
         "01.course/XML配置.md",
