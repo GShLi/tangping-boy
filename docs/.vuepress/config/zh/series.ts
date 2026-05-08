@@ -1,128 +1,118 @@
-import {
-  genBasic,
-  genComputerBasic,
-  genProgrammingBasic,
-  genDesignPatterns,
-  genBackendLanguage,
-  genJava,
-  genFrontendLanguage,
-} from "./roadmap/00.basic.ts";
-import { genDesign } from "./roadmap/01.design.ts";
-import {
-  genArchitecture,
-  genArchitecturePattern,
-} from "./roadmap/02.architecture.ts";
-import { genEnvironment } from "./roadmap/03.environment.ts";
-import {
-  genDevelopment,
-  genSpring,
-  genMyBatis,
-  genRelationDatabase,
-  genDataSource,
-  genShardingsphere,
-  genDataSync,
-  genMQ,
-  genTaskSchedule,
-  genSearchEngine,
-  genOSS,
-  genGraphStore,
-  genRedis,
-  genBigData,
-  genRegisterCenter,
-  genGateway,
-  genRpc,
-} from "./roadmap/04.development.ts";
-import { genTools } from "./roadmap/05.tools.ts";
-import { genDebug } from "./roadmap/06.debug.ts";
-import { genTesting } from "./roadmap/07.testing.ts";
-import { genQualityAnalysis } from "./roadmap/08.quality_analysis.ts";
-import { genDeployment, genK8S } from "./roadmap/09.deployment.ts";
+// 格物 - 侧边栏配置
 
-export const series = {
-  // 基础
-  // "/series/00.basic/01.computer_basic/": genComputerBasic(),
-  // "/series/00.basic/02.programming_basic/": genProgrammingBasic(),
-  // "/series/00.basic/02.programming_basic/01.design_pattern/":
-  //   genDesignPatterns(),
-  "/series/00.basic/03.backend_language/": genBackendLanguage(),
-  "/series/00.basic/03.backend_language/01.java/": genJava(),
-  // "/series/00.basic/04.frontend_language/": genFrontendLanguage(),
-  // 设计
-  // 架构
-  // "/series/02.architecture/01.architecture_pattern/": genArchitecturePattern(),
-  // 开发技术
-  // 框架
-  "/series/04.development/01.framework/01.spring/": genSpring(),
-  "/series/04.development/01.framework/04.mybatis/": genMyBatis(),
-  "/series/04.development/02.rdb/": genRelationDatabase(),
-  // "/series/04.development/03.datasource/": genDataSource(),
-  // "/series/04.development/04.shardingsphere/": genShardingsphere(),
-  // "/series/04.development/05.data_sync/": genDataSync(),
-  // "/series/04.development/06.mq/": genMQ(),
-  // "/series/04.development/07.task_schedule/": genTaskSchedule(),
-  // "/series/04.development/08.search_engine/": genSearchEngine(),
-  // "/series/04.development/09.oss/": genOSS(),
-  // "/series/04.development/10.graph_store/": genGraphStore(),
-  // No SQL
-  "/series/04.development/11.nosql/01.redis/": genRedis(),
-  // "/series/04.development/12.bigdata/": genBigData(),
-  // "/series/04.development/13.register_center/": genRegisterCenter(),
-  // "/series/04.development/14.gateway/": genGateway(),
-  // "/series/04.development/15.rpc/": genRpc(),
-  // "/series/09.deploy/04.containerization/02.k8s/": genK8S(),
-};
-
-function genRoadMap() {
+function genJavaLanguage() {
   return [
     {
-      text: "一、计算机基础",
+      text: "并发 (JUC)",
       collapsible: true,
-      children: genBasic(),
+      children: [
+        "juc/README.md",
+        "juc/JUC-线程的基础概念.md",
+        "juc/如何创建线程.md",
+        "juc/如何停止线程.md",
+        "juc/线程的状态转换.md",
+        "juc/JUC-并发编程的三大特性.md",
+        "juc/并发编程Bug的源头.md",
+        "juc/JUC-锁.md",
+        "juc/阻塞队列与生产者消费者.md",
+        "juc/并发工具类.md",
+        "juc/并发设计模式.md",
+      ],
     },
     {
-      text: "二、设计",
+      text: "IO",
       collapsible: true,
-      children: genDesign(),
+      children: [
+        "io/README.md",
+        "io/IO基础知识总结.md",
+      ],
     },
     {
-      text: "三、架构",
+      text: "JVM",
       collapsible: true,
-      children: genArchitecture(),
-    },
-    {
-      text: "四、开发环境",
-      collapsible: true,
-      children: genEnvironment(),
-    },
-    {
-      text: "五、开发技术",
-      collapsible: true,
-      children: genDevelopment(),
-    },
-    {
-      text: "六、类库和工具",
-      collapsible: true,
-      children: genTools(),
-    },
-    {
-      text: "七、调试",
-      collapsible: true,
-      children: genDebug(),
-    },
-    {
-      text: "八、测试",
-      collapsible: true,
-      children: genTesting(),
-    },
-    {
-      text: "九、质量分析",
-      collapsible: true,
-      children: genQualityAnalysis(),
-    },
-    {
-      text: "十、发布和部署",
-      collapsible: true,
-      children: genDeployment(),
+      children: [
+        "jvm/README.md",
+        "jvm/类加载器.md",
+        "jvm/运行时数据区域.md",
+        "jvm/执行引擎.md",
+      ],
     },
   ];
 }
+
+function genSpring() {
+  return [
+    {
+      text: "Spring 源码",
+      children: [
+        "02.code/实现一个简单的SpringBean容器.md",
+        "02.code/实现Bean对象的定义、注册和获取.md",
+      ],
+    },
+  ];
+}
+
+function genMyBatis() {
+  return [
+    {
+      text: "MyBatis 使用教程",
+      collapsible: false,
+      children: [
+        "01.course/MyBatis入门.md",
+        "01.course/XML配置.md",
+        "01.course/XML映射文件.md",
+        "01.course/动态SQL.md",
+        "01.course/日志.md",
+      ],
+    },
+    {
+      text: "MyBatis 源码分析",
+      children: [
+        "02.code/01.core_architecture_initialization/README.md",
+        "02.code/02.sql_execution_engine/StatementHandler-SQL的雕刻家.md",
+      ],
+    },
+  ];
+}
+
+function genMySQL() {
+  return [
+    {
+      text: "MySQL 基础",
+      children: [
+        "01.basic/MySQL基础架构.md",
+        "01.basic/MySQL事务.md",
+      ],
+    },
+  ];
+}
+
+function genRedis() {
+  return [
+    {
+      text: "Redis 基础",
+      children: [
+        "s1/Redis命令执行流程.md",
+        "s1/Redis基础架构-数据模型和操作接口.md",
+        "s1/Redis中使用的数据结构.md",
+        "s1/Redis单机数据库的实现.md",
+        "s1/Redis多机数据库(集群)的实现.md",
+        "s1/Redis其他模块.md",
+      ],
+    },
+  ];
+}
+
+export const series = {
+  // Java 生态 — 语言层面统一入口，侧边栏分组显示 JUC / IO / JVM
+  "/series/java/language/": genJavaLanguage(),
+  "/series/java/language/juc/": genJavaLanguage(),
+  "/series/java/language/io/": genJavaLanguage(),
+  "/series/java/language/jvm/": genJavaLanguage(),
+  // Spring / MyBatis
+  "/series/java/spring/": genSpring(),
+  "/series/java/mybatis/": genMyBatis(),
+  // 数据与中间件
+  "/series/data-infra/mysql/": genMySQL(),
+  "/series/data-infra/redis/": genRedis(),
+};

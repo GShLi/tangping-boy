@@ -4,35 +4,22 @@ export const navbar = [
     link: "/posts.html",
   },
   {
-    text: "学习笔记",
+    text: "格物",
     children: [
       {
-        text: "Java",
+        text: "Java 生态",
         children: [
           {
-            text: "Java 多线程",
-            link: "/series/00.basic/03.backend_language/01.java/03.java-juc/",
+            text: "Java 语言",
+            link: "/series/java/language/",
           },
-          {
-            text: "Java IO",
-            link: "/series/00.basic/03.backend_language/01.java/04.java-io/",
-          },
-          {
-            text: "JVM",
-            link: "/series/00.basic/03.backend_language/01.java/07.java-jvm/",
-          },
-        ],
-      },
-      {
-        text: "框架",
-        children: [
           {
             text: "Spring",
-            link: "/series/04.development/01.framework/01.spring/",
+            link: "/series/java/spring/",
           },
           {
             text: "MyBatis",
-            link: "/series/04.development/01.framework/04.mybatis/",
+            link: "/series/java/mybatis/",
           },
         ],
       },
@@ -41,22 +28,29 @@ export const navbar = [
         children: [
           {
             text: "MySQL",
-            link: "/series/04.development/02.rdb/",
+            link: "/series/data-infra/mysql/",
           },
           {
             text: "Redis",
-            link: "/series/04.development/11.nosql/01.redis/",
+            link: "/series/data-infra/redis/",
           },
         ],
       },
       {
-        text: "架构",
-        children: [
-          {
-            text: "高并发系统设计",
-            link: "/series/02.architecture/high-concurrency/",
-          },
-        ],
+        text: "架构设计",
+        link: "/series/architecture/",
+      },
+      {
+        text: "AI 与开发",
+        link: "/series/ai/",
+      },
+      {
+        text: "工程实践",
+        link: "/series/engineering/",
+      },
+      {
+        text: "读书笔记",
+        link: "/series/reading/",
       },
     ],
   },
