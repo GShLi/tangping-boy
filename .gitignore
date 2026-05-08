@@ -43,3 +43,5 @@ dist/
 docs/.vuepress/.temp/
 docs/.vuepress/.cache/
 .yarn/install-state.gz
+.claude
+tmp.precommit.gitignore
