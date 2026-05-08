@@ -1,0 +1,217 @@
+# JUC - 并发编程的三大特性
+
+## 一、 原子性
+
+### 1.1 什么是并发编程的原子性
+
+原子性，即一组操作要么全部执行完毕，且在执行的过程中不会被别的因素打扰，要么全部不执行。
+
+### 1.2 保证并发编程的原子性
+
+#### 1.2.1 synchronized
+
+受 synchronized 保护的临界区需要获取锁之后才能进入，而在同一时刻只有一个线程能够获取锁，因此在 synchronized 内部修改共享变量的操作可以保证原子性。
+
+```java
+public class Main {
+  private Object monitor = new Object();
+
+  private long accountA;
+
+  private long accountB;
+
+  public void transform(long n) {
+    synchronized(monitor) {
+      accountA = accountA - n;
+      accountB = accountB + n;
+    }
+  }
+}
+```
+
+上述代码保证了同一时刻只有一个线程能够进入临界区做修改操作。
+
+#### 1.2.2 CAS
+
+CAS：Compare And Swap，直译过来的意思是比较与交换。
+
+CAS 操作需要两个值：旧值（操作前的值）和新值（操作后的值），有且仅当内存中（实际是缓存）的值等于旧值时（意味着状态没有被其他线程更新）才执行写入操作。
+
+#### 1.2.3 Lock 锁
+
+同 synchronized 类似。
+
+```java
+public class Main {
+
+  private static ReentrantLock lock = new ReentrantLock();
+
+  private long accountA;
+
+  private long accountB;
+
+  public void transform(long n) {
+    lock.lock();
+    try {
+      accountA = accountA - n;
+      accountB = accountB + n;
+    } finally {
+      lock.unlock();
+    }
+  }
+}
+```
+
+#### 1.2.4 ThreadLocal
+
+原子性问题出现在多个线程操作同一个共享变量的情况，而 ThreadLocal 则为每个线程单独存储一个变量，因此不存在共享变量，进而解决了原子性问题，或者说不存在原子性问题。
+
+## 二、 可见性
+
+### 1. 什么是可见性
+
+当一个线程修改共享变量时，其他线程能够立即看到共享变量修改后的状态。
+
+### 2. 解决可见性的方式
+
+#### 2.1 volatile
+
+volatile 是一个关键字，用于修饰成员变量（属性）。
+
+如果一个成员变量被 volatile 修饰，相当于告诉 CPU 对于当前变量的操作不允许使用缓存，读取时必须从主存读取，写入时也必须写入主存。
+
+volatile 的内存语义：
+
+* volatile 属性被写：当写一个 volatile 变量，JMM 会将当前线程对应的CPU缓存中的内容立即刷新到主存中。
+* volatile 属性被读：当读一个 volatile 变量，JMM 会将缓存中的内容设置为失效，必须去内存中重新读取变量。
+
+被 volatile 关键字修饰的变量在转换成汇编语言后会被加 lock 前缀。
+
+CPU 在执行指令遇到 lock 指令前缀时会做两件事情：
+
+1. 将当前处理器缓存中的数据写回主存。
+2. 当前变量在其他 CPU 缓存中的数据立即失效（缓存一致性协议，总线嗅探机制）。
+
+总结：volatile 关键字保证了数据被修改后能够立即写入主存并被其他线程知悉，实现了一个线程的修改操作被其他线程可见。
+
+#### 2.2 synchronized
+
+#### 2.3 Lock
+
+#### 2.4 final
+
+被 final 修饰的变量在初始化之后就不能被修改，因此也就不会出现可见性问题。
+
+且 final 和 volatile 也是不能够同时使用的。
+
+## 三、 有序性
+
+### 1. 什么是有序性
+
+CPU 在执行的时候会优化指令的执行顺序，导致指令执行的顺序和代码的顺序不一致而造成的结果错误的问题。
+
+单例模式：
+
+```java
+public class Singleton {
+  private Object obj;
+
+  public Object singleton() {
+    if (obj == null) {
+      obj = new Object();
+    }
+    return obj;
+  }
+}
+```
+
+上述代码中 new 操作由三个步骤组成：
+
+1. 分配一块内存 M
+2. 在 M 上初始化对象
+3. 将 M 的内存地址返回
+
+正常来说 CPU 执行的顺序应该是 `1->2->3`， 但是经过指令重排序后的执行顺序是 `1->3->2`, 这样就会导致一个情况的发生：CPU 将对象赋值 obj 的时候还未初始化，此时线程中断，其他线程调用 singleton 获取单例对象拿到的就是一个未经初始化的对象。
+
+解决方法：对初始化操作加锁。
+
+```java
+public class Singleton {
+  private Object obj;
+
+  public Object singleton() {
+    if (obj == null) {
+      synchronized(this) {
+        if (obj == null) {
+          obj = new Object();
+        }
+      }
+    }
+    return obj;
+  }
+}
+```
+
+这里为什么获取锁进入临界区后又进行了一次空值判断呢？
+
+```java
+public class Singleton {
+  private Object obj;
+
+  public Object singleton() {
+    if (obj == null) {
+      // 执行到此处时线程中断，其他线程开始执行后续的初始化操作。
+      synchronized(this) {
+        // 再次进入临界区后其他线程可能已经对 obj 对象初始化完成了，重新初始化就违反了单例的规则。
+        obj = new Object();
+      }
+    }
+    return obj;
+  }
+}
+```
+
+### 2. as-if-serial
+
+不论指令如何重排序，都要保证在单线程执行时结果是正确的。
+
+为了遵守此语义，编译器和处理器不会对存在依赖关系的数据操作指令重排序。即不会对如下代码中的 command 3 做重排序，因为重排序后会影响最终结果。但是 command 1 和 command 2 的执行顺序可以改变。
+
+```java
+// command 1
+int a=1;
+// command 2
+int b=2;
+// command 3
+int c=a+b;
+```
+
+若将代码稍作修改，那么 command 1 和 command 2 的执行顺序也不能改变。
+
+```java
+// command 1
+int a=1;
+// command 2
+int b=a;
+// command 3
+int c=a+b;
+```
+
+### 3. happens-before
+
+1. 单一线程原则：同一线程中，书写在前面的操作 happens-before 书写在后面的操作。
+2. 管程锁原则：锁的 lock 操作 happens-before 锁的 unlock 操作。
+3. volatile 原则：对于一个 volatile 变量的写操作 happens-before 后续对这个变量的任意操作。
+4. 传递性原则：如果A操作 happen-before B操作，B操作happen-before C操作，那么A操作happen-before C操作。
+5. 线程启动的原则：同一个线程的start方法 happen-before 此线程的其它方法。
+6. 线程中断的原则：对线程interrupt 方法的调用 happen-before 被中断线程的检测到中断发送的代码
+7. 线程加入原则：Thread 对象的结束先行发生于 join() 方法返回。
+8. 对象终结原则：一个对象的初始化完成(构造函数执行结束)先行发生于它的 finalize() 方法的开始。
+
+JMM 只有在不出现上述情况时，才不会触发指令重排效果
+
+### 4. volatile
+
+在指令之间添加内存屏障，屏障前的执行必须先执行，屏障后的指令必须后执行。
+
+至于 volatile 和内存屏障的关系还有待研究。

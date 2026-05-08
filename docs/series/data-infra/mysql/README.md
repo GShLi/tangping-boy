@@ -14,7 +14,7 @@
 3. NDB
 4. Memory
 5. Archive
-6. Federated 
+6. Federated
 7. Maria
 
 ### InnoDB
