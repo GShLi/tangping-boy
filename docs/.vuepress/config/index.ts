@@ -11,4 +11,6 @@ export const themeConfig = {
     },
   },
   author: "Double",
+  colorMode: "dark",
+  colorModeSwitch: true,
 };
