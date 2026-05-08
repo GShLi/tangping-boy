@@ -1,69 +1,39 @@
-# TODO List
+# TODO
 
-## TODO ❌
+## 待补完文章
 
-- [❌] 做一下 pre-commit
+以下文章有标题框架但内容不完整，需要补充：
 
-- [❌] 根据思维导图整理 Redis 文章
+| 文件 | 问题 | 优先级 |
+|------|------|--------|
+| `java/language/juc/阻塞队列与生产者消费者.md` | 生产者消费者部分已写，ArrayBlockingQueue / LinkedBlockingQueue / PriorityBlockQueue / DelayQueue / SynchronousQueue 各节仅有标题 | 高 |
+| `java/language/juc/JUC-锁.md` | 仅 74 行，锁分类部分较简略 | 中 |
+| `java/language/juc/并发编程Bug的源头.md` | MESA 模型部分未完成，末尾 AI 解释明显错误需修正 | 中 |
+| `java/spring/02.code/【手写Spring】实现Bean对象的定义、注册和获取.md` | 仅标题，手写系列 03-21 篇待重启 | 高 |
+| `java/mybatis/02.code/StatementHandler-SQL的雕刻家.md` | 内容偏薄 | 低 |
+| `architecture/high-concurrency/s1/【高并发系统】什么是高并发系统？.md` | 仅一篇概述，整个系列待建 | 高 |
 
-- [❌] RabbitMQ
+## 待写作
 
-- [❌] 看一下 JUC
+| 板块 | 计划文章 |
+|------|---------|
+| AI 与开发 | AI 辅助编程实践 / Prompt Engineering / AI 与架构设计 / AI 代码审查 |
+| 工程实践 | CI/CD 实践总结 / Docker 容器化实践 / 性能调优案例 |
+| 读书笔记 | 《DDD》/《数据密集型应用系统设计》/《凤凰架构》/ 哲学类 |
+| 架构设计 | 架构决策记录 (ADR) / DDD 实践 / 分布式系统 / 系统重构案例 |
+| Spring | Spring Boot 从零搭建 / Spring MVC 请求链路源码 |
 
-- [❌] 学习 K8S
+## 已记录问题
 
-- [❌] 看一下 etcd
+1. 为什么 Redis 中字符串对象 SDS 和 EMBSTR 的界限是 39 字节？
+2. Java CyclicBarrier 循环栅栏的原理和使用场景？
+3. Nginx upstream live 检测的机制？
+4. wait(timeout) 超时后被谁从等待队列移出？
+5. 什么是 Monitor 锁？
 
-- [❌] 实现一下解决 CORS 问题的两种方法
+## 已修复
 
-- [❌] 整理一下 conditional 的使用<https://segmentfault.com/q/1010000042868741>
-
-- [❌] 看一下 Gradle
-
-- [❌] 看一下 Maven
-
-- [❌] Redis 数据类型及其应用了解一下，每种数据类型及其实现至少要能够说出两种应用场景
-
-- [❌] Rabbit MQ 的应用场景至少要知道 5 个
-
-- [❌] xcall 命令的作用和用法是什么？
-
-- [❌] Nginx upstream live 检测的机制是什么？
-
-- [❌] Java Cyclic Barrier 循环栅栏是什么，什么用处？
-
-- [❌] 为什么 Redis 中字符串对象底层实现方式 SDS 和 EMBSTR 的界限是 39 字节？内存对齐，深入了解一下。
-
-- [❌] JVM 内存模型了解一下
-
-- [❌] MySQL 深入学习一下
-
-  - 常用的引擎及其文件存储方式
-  - 索引？
-
-- [❌] [获取 Request 的几种方式](https://www.cnblogs.com/zwh0910/p/17168833.html)
-
-- [❌] [Ansible 学习-service 模块](https://curder.github.io/ansible-study/module/service.html)
-
-## DONE ✅
-
-## 问题
-
-1. Vue2 中 computed 能否在 v-if 里面使用
-
-## BUG
-
-1. 设计模式章节 sidebar 写了一个 collapse children 只有一个 README.md，当从其他页面切换到设计模式后，该 collapse 显示的原主题的内容
-
-## 不知道的名词
-
-1. overlay 网络
-2. Flannel
-
-## 学习资料
-
-[Web 前端大师课](https://m.ke.qq.com/course/5892689?course_id=5892689&mmticket=#term_id=106109971&wxlogin=1)
-
-[MDN Web Docs](https://developer.mozilla.org/zh-CN/)
-
-写一篇文章：<https://weilining.github.io/294.html#macOS-amp-Linux>
+- [x] 设计模式 sidebar collapse 单子项显示异常（已删除空壳，问题不再存在）
+- [x] 移除所有空壳文章（193 篇）
+- [x] 目录结构重构（00.basic → java/data-infra/architecture）
+- [x] 文章去编号前缀
