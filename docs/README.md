@@ -17,9 +17,9 @@ features:
   - title: 技术博客
     details: 项目复盘、问题排查、技术分享。写我踩过的坑和做过的决策。
     link: /posts.html
-  - title: 学习笔记
-    details: Java / Spring / MyBatis / Redis 体系化知识库，深度优先于广度。
-    link: /series/00.basic/03.backend_language/01.java/
+  - title: 格物
+    details: Java 生态、源码、架构设计、AI 与开发……格物致知，探究原理。
+    link: /series/java/language/juc/
   - title: 项目展示
     details: Titan ETL 数据平台设计文档，以及其他项目实践记录。
     link: /project/work/Titan.md
@@ -41,7 +41,7 @@ footer:
 AI 时代，知识的获取成本趋近于零。本站不追求记录"是什么"，而专注于记录**"我是怎么想的"**——技术决策背后的权衡、踩过的坑、读过的书引发的思考。
 
 - **博客**：技术复盘、读书笔记、个人随笔
-- **学习笔记**：Java 生态体系化知识，按需深入而非面面俱到
+- **格物**：Java 生态、框架、架构、AI 与开发……格物致知，探究事物原理
 - **项目**：工作实践的设计文档，如 Titan ETL 数据平台
 
 > 核心信念：**AI 能生成答案，但不能替你思考。**
