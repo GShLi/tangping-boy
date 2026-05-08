@@ -1,22 +1,7 @@
 export function genBasic() {
   return [
     {
-      text: "计算机基础",
-      collapsible: true,
-      children: [""],
-    },
-    {
-      text: "编程基础",
-      collapsible: true,
-      children: [],
-    },
-    {
       text: "后端编程语言",
-      collapsible: true,
-      children: [],
-    },
-    {
-      text: "前端编程语言",
       collapsible: true,
       children: [],
     },
@@ -32,27 +17,7 @@ export function genProgrammingBasic() {
 }
 
 export function genDesignPatterns() {
-  return [
-    {
-      text: "创建型模式",
-      collapsible: true,
-      children: [
-        "s1-创建型模式/01.工厂方法模式.md",
-        "s1-创建型模式/02.抽象工厂模式.md",
-        "s1-创建型模式/03.生成器模式.md",
-      ],
-    },
-    {
-      text: "结构型模式",
-      collapsible: true,
-      children: ["s2-结构性模式/6.享元模式.md"],
-    },
-    {
-      text: "行为模式",
-      collapsible: true,
-      children: ["s3-行为型模式/01.责任链模式.md"],
-    },
-  ];
+  return [];
 }
 
 export function genBackendLanguage() {
@@ -67,14 +32,6 @@ export function genBackendLanguage() {
 export function genJava() {
   return [
     {
-      text: "Java 基础",
-      children: ["01.java-basic/01.Java基础-面向对象.md"],
-    },
-    {
-      text: "Java 集合",
-      children: ["02.java-collection/README.md"],
-    },
-    {
       text: "Java 多线程",
       children: [
         "03.java-juc/README.md",
@@ -82,35 +39,34 @@ export function genJava() {
         "03.java-juc/02.JUC-并发编程的三大特性.md",
         "03.java-juc/03.JUC-锁.md",
         "03.java-juc/04.JUC-阻塞队列.md",
-        "03.java-juc/Java多线程-QA.md",
       ],
     },
     {
       text: "Java IO",
       children: [
         "04.java-io/01.IO基础知识总结.md",
-        "04.java-io/02.IO设计模式总结.md",
-        "04.java-io/03.IO模型总结.md",
-        "04.java-io/04.NIO核心知识总结.md",
       ],
     },
     {
-      text: "Java 8",
-      children: ["05.java8/README.md"],
-    },
-    {
-      text: "Java 8+",
-      children: ["06.java8+/README.md"],
-    },
-    {
-      text: "Java 虚拟机(JVM)",
+      text: "Java 虚拟机 (JVM)",
       children: [
         "07.java-jvm/README.md",
         "07.java-jvm/01.类加载器.md",
         "07.java-jvm/02.运行时数据区域.md",
         "07.java-jvm/03.执行引擎.md",
-        "07.java-jvm/04.本地库接口.md",
-        "07.java-jvm/05.本地方法库.md",
+      ],
+    },
+    {
+      text: "JUC 并发",
+      children: [
+        "JUC/00.总览.md",
+        "JUC/01.如何创建线程.md",
+        "JUC/02.如何停止线程.md",
+        "JUC/03.线程的状态转换.md",
+        "JUC/04.实现生产者消费者模式.md",
+        "JUC/05.并发编程Bug的源头.md",
+        "JUC/06.并发工具类.md",
+        "JUC/07.并发设计模式.md",
       ],
     },
   ];

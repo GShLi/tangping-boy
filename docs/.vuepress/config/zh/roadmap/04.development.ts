@@ -110,34 +110,10 @@ export function genFramework() {
 export function genSpring() {
   return [
     {
-      text: "Spring 教程",
-      children: [],
-    },
-    {
       text: "Spring 源码",
       children: [
-        "02.code/00.Intro.md",
         "02.code/01.【手写Spring】实现一个简单的SpringBean容器.md",
         "02.code/02.【手写Spring】实现Bean对象的定义、注册和获取.md",
-        "02.code/03.【手写Spring】基于Cglib实现含构造函数的类实例化策略.md",
-        "02.code/04.【手写Spring】注入属性和依赖对象.md",
-        "02.code/05.【手写Spring】资源加载器解析文件注册对象.md",
-        "02.code/06.【手写Spring】实现应用上下文.md",
-        "02.code/07.【手写Spring】Bean对象的初始化和销毁.md",
-        "02.code/08.【手写Spring】感知容器对象.md",
-        "02.code/09.【手写Spring】对象作用域和FactoryBean.md",
-        "02.code/10.【手写Spring】容器事件和事件监听器.md",
-        "02.code/11.【手写Spring】基于JDK、Cglib实现AOP切面.md",
-        "02.code/12.【手写Spring】把AOP融入Bean的生命周期.md",
-        "02.code/13.【手写Spring】自动扫描注册Bean对象.md",
-        "02.code/14.【手写Spring】通过注解注入属性信息.md",
-        "02.code/15.【手写Spring】给代理对象设置属性注入.md",
-        "02.code/16.【手写Spring】通过三级缓存解决循环依赖.md",
-        "02.code/17.【手写Spring】数据类型转换.md",
-        "02.code/18.【手写Spring】JDBC功能整合.md",
-        "02.code/19.【手写Spring】事务处理.md",
-        "02.code/20.【手写Spring】ORM框架实现.md",
-        "02.code/21.【手写Spring】将ORM框架整合到SpringBean容器中.md",
       ],
     },
   ];
@@ -153,8 +129,6 @@ export function genMyBatis() {
         "01.course/02.XML配置.md",
         "01.course/03.XML映射文件.md",
         "01.course/04.动态SQL.md",
-        "01.course/05.Java API.md",
-        "01.course/06.SQL 语句构建器.md",
         "01.course/07.日志.md",
       ],
     },
@@ -162,12 +136,7 @@ export function genMyBatis() {
       text: "MyBatis源码分析",
       children: [
         "02.code/01.core_architecture_initialization/README.md",
-        "02.code/02.sql_execution_engine/README.md",
-        "02.code/02.sql_execution_engine/01.Executor:SQL执行的心脏.md",
-        "02.code/02.sql_execution_engine/02.StatementHandler:SQL的雕刻家.md",
-        "02.code/02.sql_execution_engine/03.ResultSetHandler:结果映射的炼金术.md",
-        "02.code/03.extensibility_mechanisms/README.md",
-        "02.code/04.advanced_optimization_techniques/README.md",
+        "02.code/02.sql_execution_engine/02.StatementHandler-SQL的雕刻家.md",
       ],
     },
   ];
@@ -178,25 +147,28 @@ export function genRelationDatabase() {
     {
       text: "MySQL",
       collapsible: true,
-      children: [],
+      children: [
+        "mysql/01.basic/01.MySQL基础架构.md",
+        "mysql/01.basic/02.MySQL事务.md",
+      ],
     },
-    {
-      text: "PostgreSQL",
-      collapsible: true,
-      children: [],
-    },
-    {
-      text: "Oracle",
-      collapsible: true,
-      children: [],
-    },
+    // {
+    //   text: "PostgreSQL",
+    //   collapsible: true,
+    //   children: [],
+    // },
+    // {
+    //   text: "Oracle",
+    //   collapsible: true,
+    //   children: [],
+    // },
   ];
 }
 
 export function genDataSource() {
   return [
     {
-      text: "genDataSource",
+      text: "数据源",
       children: [],
     },
   ];
@@ -204,7 +176,7 @@ export function genDataSource() {
 export function genShardingsphere() {
   return [
     {
-      text: "genShardingsphere",
+      text: "分库分表",
       children: [],
     },
   ];
@@ -212,7 +184,7 @@ export function genShardingsphere() {
 export function genDataSync() {
   return [
     {
-      text: "genDataSync",
+      text: "数据同步",
       children: [],
     },
   ];
@@ -220,7 +192,7 @@ export function genDataSync() {
 export function genMQ() {
   return [
     {
-      text: "genMQ",
+      text: "消息队列",
       children: [],
     },
   ];
@@ -228,7 +200,7 @@ export function genMQ() {
 export function genTaskSchedule() {
   return [
     {
-      text: "genTaskSchedule",
+      text: "任务调度",
       children: [],
     },
   ];
@@ -236,7 +208,7 @@ export function genTaskSchedule() {
 export function genSearchEngine() {
   return [
     {
-      text: "genSearchEngine",
+      text: "搜索引擎",
       children: [],
     },
   ];
@@ -244,7 +216,7 @@ export function genSearchEngine() {
 export function genOSS() {
   return [
     {
-      text: "genOSS",
+      text: "对象存储",
       children: [],
     },
   ];
@@ -252,7 +224,7 @@ export function genOSS() {
 export function genGraphStore() {
   return [
     {
-      text: "genGraphStore",
+      text: "图形存储",
       children: [],
     },
   ];
@@ -277,15 +249,15 @@ export function genRedis() {
 export function genBigData() {
   return [
     {
-      text: "genBigData",
+      text: "大数据",
       children: [],
     },
   ];
 }
-export function genReisterCenter() {
+export function genRegisterCenter() {
   return [
     {
-      text: "genReisterCenter",
+      text: "注册中心",
       children: [],
     },
   ];
@@ -293,7 +265,7 @@ export function genReisterCenter() {
 export function genGateway() {
   return [
     {
-      text: "genGateway",
+      text: "网关",
       children: [],
     },
   ];
@@ -301,7 +273,7 @@ export function genGateway() {
 export function genRpc() {
   return [
     {
-      text: "genRpc",
+      text: "RPC",
       children: [],
     },
   ];

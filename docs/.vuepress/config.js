@@ -14,11 +14,7 @@ export default defineUserConfig({
     },
   },
   bundler: viteBundler(),
-  plugins: [
-    // searchConsolePlugin({
-    //   baiduId: "cc5c9b6500314a97a313d944eb260fb5"
-    // })
-  ],
+  plugins: [],
   theme: recoTheme(themeConfig),
   head: [
     [

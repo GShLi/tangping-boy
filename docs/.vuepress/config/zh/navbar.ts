@@ -1,83 +1,30 @@
 export const navbar = [
   {
-    text: "基础",
-    children: [
-      // {
-      //   text: "计算机基础",
-      //   link: "/series/00.basic/01.computer_basic/",
-      // },
-      {
-        text: "编程基础",
-        children: [
-          {
-            text: "设计模式",
-            link: "/series/00.basic/02.programming_basic/01.design_pattern/",
-          },
-          // {
-          //   text: "数据结构",
-          //   link: "/series/00.basic/02.programming_basic/02.data_structure/"
-          // }
-        ],
-      },
-      {
-        text: "后端开发语言",
-        children: [
-          {
-            text: "Java",
-            link: "/series/00.basic/03.backend_language/01.java/",
-          },
-        ],
-      },
-      // {
-      //   text: "前端开发语言",
-      //   children: [
-      //     {
-      //       text: "HTML",
-      //       link: "/series/00.basic/04.frontend-language/01.html/"
-      //     },
-      //     {
-      //       text: "CSS",
-      //       link: "/series/00.basic/04.frontend-language/02.css/"
-      //     },
-      //     {
-      //       text: "JavaScript",
-      //       link: "/series/00.basic/04.frontend-language/03.javascript/"
-      //     },
-      //     {
-      //       text: "TypeScript",
-      //       link: "/series/00.basic/04.frontend-language/04.typescript/"
-      //     },
-      //     {
-      //       text: "Vue",
-      //       link: "/series/00.basic/04.frontend-language/05.vue/"
-      //     }
-      //   ]
-      // },
-    ],
+    text: "博客",
+    link: "/posts.html",
   },
-  // {
-  //   text: "架构",
-  //   children: [
-  //     {
-  //       text: "架构模式",
-  //       link: "/series/02.architecture/01.architecture_pattern/"
-  //     },
-  //     {
-  //       text: "架构分层",
-  //       link: "/series/02.architecture/02.architecture_hierachy/"
-  //     },
-  //     {
-  //       text: "设计与开发原则",
-  //       link: "/series/02.architecture/03.principle_of_design_and_development/"
-  //     },
-  //   ]
-  // },
   {
-    text: "开发技术",
+    text: "学习笔记",
     children: [
+      {
+        text: "Java",
+        children: [
+          {
+            text: "Java 多线程",
+            link: "/series/00.basic/03.backend_language/01.java/03.java-juc/",
+          },
+          {
+            text: "Java IO",
+            link: "/series/00.basic/03.backend_language/01.java/04.java-io/",
+          },
+          {
+            text: "JVM",
+            link: "/series/00.basic/03.backend_language/01.java/07.java-jvm/",
+          },
+        ],
+      },
       {
         text: "框架",
-        link: "/series/04.development/01.framework/",
         children: [
           {
             text: "Spring",
@@ -90,94 +37,40 @@ export const navbar = [
         ],
       },
       {
-        text: "关系型数据库",
-        link: "/series/04.development/02.rdb/",
-      },
-      {
-        text: "数据源",
-        link: "/series/04.development/03.datasource/",
-      },
-      // {
-      //   text: "分库分表",
-      //   link: "/series/04.development/04.shardingsphere/"
-      // },
-      // {
-      //   text: "数据同步",
-      //   link: "/series/04.development/05.data_sync/"
-      // },
-      {
-        text: "消息队列",
-        link: "/series/04.development/06.mq/",
-      },
-      // {
-      //   text: "任务调度",
-      //   link: "/series/04.development/07.task_schedule/"
-      // },
-      // {
-      //   text: "搜索引擎",
-      //   link: "/series/04.development/08.search_engine/"
-      // },
-      // {
-      //   text: "对象存储",
-      //   link: "/series/04.development/09.oss/"
-      // },
-      // {
-      //   text: "图形存储",
-      //   link: "/series/04.development/10.graph_store/"
-      // },
-      {
-        text: "NoSQL",
+        text: "数据与中间件",
         children: [
+          {
+            text: "MySQL",
+            link: "/series/04.development/02.rdb/",
+          },
           {
             text: "Redis",
             link: "/series/04.development/11.nosql/01.redis/",
           },
         ],
       },
-      // {
-      //   text: "大数据",
-      //   link: "/series/04.development/12.bigdata/"
-      // },
-      // {
-      //   text: "注册中心",
-      //   link: "/series/04.development/13.reister_center/"
-      // },
-      // {
-      //   text: "网关",
-      //   link: "/series/04.development/14.gateway/"
-      // },
-      // {
-      //   text: "RPC",
-      //   link: "/series/04.development/15.rpc/"
-      // }
-    ],
-  },
-  {
-    text: "部署",
-    children: [
       {
-        text: "容器化",
+        text: "架构",
         children: [
           {
-            text: "K8S",
-            link: "/series/09.deploy/04.containerization/02.k8s/",
+            text: "高并发系统设计",
+            link: "/series/02.architecture/high-concurrency/",
           },
         ],
       },
     ],
   },
   {
-    text: "文章",
-    link: "/posts.html",
+    text: "项目",
+    link: "/project/work/Titan.md",
+  },
+  {
+    text: "关于",
+    link: "/about.md",
   },
   {
     text: "路书",
     link: "/archive/RoadBook.md",
   },
-  // {
-  //   text: "TODO",
-  //   link: "/TODO.md",
-  // },
-  // { text: "Gitee", link: "https://gitee.com/Double_Float/" },
   { text: "Github", link: "https://github.com/GShLi/" },
 ];
