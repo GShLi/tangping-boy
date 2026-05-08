@@ -106,9 +106,6 @@ function genRedis() {
 export const series = {
   // Java 生态 — 语言层面统一入口，侧边栏分组显示 JUC / IO / JVM
   "/series/java/language/": genJavaLanguage(),
-  "/series/java/language/juc/": genJavaLanguage(),
-  "/series/java/language/io/": genJavaLanguage(),
-  "/series/java/language/jvm/": genJavaLanguage(),
   // Spring / MyBatis
   "/series/java/spring/": genSpring(),
   "/series/java/mybatis/": genMyBatis(),
